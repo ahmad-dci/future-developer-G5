@@ -1,18 +1,30 @@
-/* START */
+/*----START----*/
+/*--RULES: ///////////////////////////////////////////////////////////////////////
+        a)  .camelCase  (Example: .sidebarLeft, #navbarTop, .divMobile)
+        b)  .purposeX (Example: .containerJay, #someDivS [Jay= Jay, J=Javier, S=Stefan, I=Isaac])
+        c)  /* REMEMBER TO COMMENT *\
+        d)  check your lines before your pull request:
 
+  --LINES CSS:  Jay :   100 - 350     --LINES HTML: Jay     50 - 300
+                Javier: 352 - 602                   Javier  302 - 552
+                Stefan: 604 - 854                   Stefan  554 - 804
+                Isaac:  856 - 1106                  Isaac   806 - 1056
+////////////////////////////////////////////////////////////////////////////////*/
 /*RESET*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     color: #777;
+    /* font-family: Arial, Helvetica, sans-serif; */
 }
 
 /* VARIABLES*/
 :root {
-    --mainColor: rgba(255,255,255,0);
+    --mainColor: rgba(0,0,0,1);
     --secondColor: rgba(255,255,255,1);
     --thirdColor:  #777;
+
   }
 
 /* GRID CONTAINER & AREA*/ 
@@ -20,7 +32,7 @@
     display: grid;
     grid-template-areas:
     'jay jay jay jay jay jay'
-    'javier javie javier javier javier javier'
+    'javier javier javier javier javier javier'
     'stefan stefan stefan stefan stefan stefan'
     'isaac isaac isaac isaac isaac isaac';
 }
@@ -49,19 +61,6 @@
 
 
    
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -854,7 +853,7 @@
 
 /* STEFAN's PART END */
 
-/* ISAAC's PART END */
+/* ISAAC's PART START */
 
 
 
