@@ -15,16 +15,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #777;
-    /* font-family: Arial, Helvetica, sans-serif; */
+    color: var(--thirdColor);
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
 }
 
 /* VARIABLES*/
 :root {
     --mainColor: rgba(0,0,0,1);
     --secondColor: rgba(255,255,255,1);
-    --thirdColor:  #777;
-
+    --thirdColor:  rgba(119, 119, 119,1);
   }
 
 /* GRID CONTAINER & AREA*/ 
@@ -36,12 +35,32 @@
     'stefan stefan stefan stefan stefan stefan'
     'isaac isaac isaac isaac isaac isaac';
 }
+/* GRID CONTAINER & AREA END */
 
+/* RETURN TO TOP BUTTON */
+#returnToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 9999;
+    font-size: 3rem;
+    border-radius: 50%;
+   /* background-color: var(--secondColor); */
+    text-shadow: 2px 2px 12px rgb(59, 59, 59); 
+    transition: color 0.3s ease-in;
+}
 
+#returnToTop:hover {
+    color: var(--secondColor);
+}
 
+/* Simulated click: moves down, makes shadow darker*/
+#returnToTop:active {
+    transform: translateY(2px);
+    box-shadow: 1px 1px 12px rgb(29, 29, 29);
+}
 
-
-
+/* RETURN TO TOP BUTTON END*/
 
 
 
@@ -61,26 +80,6 @@
 
 
    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -603,87 +602,84 @@
 
 /* STEFAN's PART START */
 
-.graphBarS {
+.stefan {
     grid-area: stefan;
+    position: relative;
+    width: 100vw;
+    }
+
+
+.containerBarS {
+    position: absolute;
+    width: 100vw;
+    background: rgba(115, 115, 115, 0.6)
+}    
+
+.logoFA {
+    font-size: 3rem;
+    color: var(--thirdColor);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Knowledge-Bar */
+#bar {
+    list-style: none;
+}
+
+/* Bar-Top-Part */
+#bar li div.top { background-color:rgba(119, 119, 119, 0.6); position:relative;
+    width:100px; height:40px; /*-moz-border-radius: 100px/40px; -webkit-border-radius: 100px 40px;*/ border-radius: 100px/40px; }
+
+/* logoFAs hidden/unhidden for hover */
+ #bar li div.top i { display:none; }
+ #bar li:hover div.top i { display:inline; }
+
+/* Bar-Bottom-Part */
+ #bar li div.bottom { background-color:rgba(115, 115, 115, 0.6); margin-top:-40px; position:relative;
+    width:100px; -moz-border-radius: 100px/40px; -webkit-border-radius: 100px 40px; border-radius: 100px/40px; }
+
+/* Z-Index Hierarchies & 3D-Color Effect*/
+#javaScript div.top { z-index:99; }
+#javaScript div.bottom { z-index:98; height:120px; }
+#javaScript:hover div.top { z-index:999; background-color:rgba(119, 119, 119, 0.2); }
+#javaScript:hover div.bottom { z-index:998; background-color: rgba(119, 119, 119, 1);
+background:linear-gradient(-90deg, rgba(119, 119, 119, 1), rgba(119, 119, 119, 0.4));/* background:-webkit-gradient(linear, 0 top, 0 bottom, from(#1a6c90), to(#14506b));*/ }
+
+#css div.top { z-index:97; }
+#css div.bottom { z-index:96; height:120px; }
+#css:hover div.top { z-index:997; background-color:rgba(119, 119, 119, 0.2); }
+#css:hover div.bottom { z-index:996; background-color: rgba(119, 119, 119, 1);
+background:linear-gradient(-90deg, rgba(119, 119, 119, 1), rgba(119, 119, 119, 0.4));}
+
+#html div.top { z-index:95; }
+#html div.bottom { z-index:94; height:120px; }
+#html:hover div.top { z-index:995; background-color:rgba(119, 119, 119, 0.2); }
+#html:hover div.bottom { z-index:994; background-color: rgba(119, 119, 119, 1);
+background:linear-gradient(-90deg, rgba(119, 119, 119, 1), rgba(119, 119, 119, 0.4));}
+
+#github div.top { z-index:93; }
+#github div.bottom { z-index:92; height:120px; }
+#github:hover div.top { z-index:993; background-color:rgba(119, 119, 119, 0.2); }
+#github:hover div.bottom { z-index:992; background-color: rgba(119, 119, 119, 1);
+background:linear-gradient(-90deg, rgba(119, 119, 119, 1), rgba(119, 119, 119, 0.4));}
+
+#git div.top { z-index:91; }
+#git div.bottom { z-index:90; height:120px; }
+#git:hover div.top { z-index:991; background-color:rgba(119, 119, 119, 0.2); }
+#git:hover div.bottom { z-index:990; background-color: rgba(119, 119, 119, 1);
+background:linear-gradient(-90deg, rgba(119, 119, 119, 1), rgba(119, 119, 119, 0.4));}
+
+#linux div.top { z-index:89; }
+#linux div.bottom { z-index:88; height:120px; }
+#linux:hover div.top { z-index:989; background-color:rgba(119, 119, 119, 0.2); }
+#linux:hover div.bottom { z-index:988;; background-color: rgba(119, 119, 119, 1);
+background:linear-gradient(-90deg, rgba(119, 119, 119, 1), rgba(119, 119, 119, 0.4));}
+
+.logoDCI{
+    margin-top: -170px;
+    transform: skewX(15deg);
+    z-index: -999
+    
+}
 
 
 
