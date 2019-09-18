@@ -97,7 +97,6 @@
 
 
 /* JAY's PART START */
-
 .header-J {
 
     position: relative;
@@ -279,9 +278,7 @@ video {
 }
 /* END OF THE POSITIONING OF NAMES UNDER G-5 */
 
-
-
-/* STRAT OF NABAR ANIMATION */
+/* START OF NABAR ANIMATION */
 @keyframes animate {
     0% {
         opacity: 0;
@@ -300,6 +297,19 @@ video {
     }
 
 /* END OF NAVBAR ANIMATION */
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -591,119 +601,119 @@ video {
 /* JAVIER's PART END  */
 
 /* STEFAN's PART START */
+
 .stefan {
     grid-area: stefan;
     position: relative;
-    width: 100vw;
-    }
-
-
-.containerBarS {
-    position: absolute;
-    width: 100vw;
-    background: rgba(115, 115, 115, 0.6)
-}    
-
-.logoFA {
-    font-size: 3rem;
-    color: var(--thirdColor);
+    /* width: 100vw; */
+    height: 90vh;
+    /* padding: 5rem; */
+    background: radial-gradient(circle, var(--secondColor), var(--thirdColor));
 }
-
-/* Knowledge-Bar */
-#bar {
-    list-style: none;
-}
-
-/* Bar-Top-Part */
-#bar li div.top { background-color:rgba(119, 119, 119, 0.6); position:relative;
-    width:100px; height:40px; /*-moz-border-radius: 100px/40px; -webkit-border-radius: 100px 40px;*/ border-radius: 100px/40px; }
-
-/* logoFAs hidden/unhidden for hover */
- #bar li div.top i { display:none; }
- #bar li:hover div.top i { display:inline; }
-
-/* Bar-Bottom-Part */
- #bar li div.bottom { background-color:rgba(115, 115, 115, 0.6); margin-top:-40px; position:relative;
-    width:100px; -moz-border-radius: 100px/40px; -webkit-border-radius: 100px 40px; border-radius: 100px/40px; }
-
-/* Z-Index Hierarchies & 3D-Color Effect*/
-#javaScript div.top { z-index:99; }
-#javaScript div.bottom { z-index:98; height:120px; }
-#javaScript:hover div.top { z-index:999; background-color:rgba(119, 119, 119, 0.2); }
-#javaScript:hover div.bottom { z-index:998; background-color: rgba(119, 119, 119, 1);
-background:linear-gradient(-90deg, rgba(119, 119, 119, 1), rgba(119, 119, 119, 0.4));/* background:-webkit-gradient(linear, 0 top, 0 bottom, from(#1a6c90), to(#14506b));*/ }
-
-#css div.top { z-index:97; }
-#css div.bottom { z-index:96; height:120px; }
-#css:hover div.top { z-index:997; background-color:rgba(119, 119, 119, 0.2); }
-#css:hover div.bottom { z-index:996; background-color: rgba(119, 119, 119, 1);
-background:linear-gradient(-90deg, rgba(119, 119, 119, 1), rgba(119, 119, 119, 0.4));}
-
-#html div.top { z-index:95; }
-#html div.bottom { z-index:94; height:120px; }
-#html:hover div.top { z-index:995; background-color:rgba(119, 119, 119, 0.2); }
-#html:hover div.bottom { z-index:994; background-color: rgba(119, 119, 119, 1);
-background:linear-gradient(-90deg, rgba(119, 119, 119, 1), rgba(119, 119, 119, 0.4));}
-
-#github div.top { z-index:93; }
-#github div.bottom { z-index:92; height:120px; }
-#github:hover div.top { z-index:993; background-color:rgba(119, 119, 119, 0.2); }
-#github:hover div.bottom { z-index:992; background-color: rgba(119, 119, 119, 1);
-background:linear-gradient(-90deg, rgba(119, 119, 119, 1), rgba(119, 119, 119, 0.4));}
-
-#git div.top { z-index:91; }
-#git div.bottom { z-index:90; height:120px; }
-#git:hover div.top { z-index:991; background-color:rgba(119, 119, 119, 0.2); }
-#git:hover div.bottom { z-index:990; background-color: rgba(119, 119, 119, 1);
-background:linear-gradient(-90deg, rgba(119, 119, 119, 1), rgba(119, 119, 119, 0.4));}
-
-#linux div.top { z-index:89; }
-#linux div.bottom { z-index:88; height:120px; }
-#linux:hover div.top { z-index:989; background-color:rgba(119, 119, 119, 0.2); }
-#linux:hover div.bottom { z-index:988;; background-color: rgba(119, 119, 119, 1);
-background:linear-gradient(-90deg, rgba(119, 119, 119, 1), rgba(119, 119, 119, 0.4));}
-
-.logoDCI{
-    margin-top: -170px;
-    transform: skewX(15deg);
-    z-index: -999
+.containerHeaderS{
     
 }
 
+.containerHeaderS div:nth-child(1), .containerHeaderS div:nth-child(2){
+    font-size: 3rem;
+    color: var(--secondColor);
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 2rem 0;
+    display: inline-block;
+}
+
+/* .firstPartS */
+.containerHeaderS div:nth-child(1) {
+    animation: showup 7s infinite;
+}
+ 
+.containerHeaderS div:nth-child(2) {
+    width: 0px;
+    animation: reveal 7s infinite;
+}
+
+.sublineS span {
+    margin-left: -355px;
+    animation: slidein 7s infinite;
+    color: var(--secondColor);
+}
+
+.wrapperIconS {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    font-size: 8rem;
+}
+#logoDCIS {
+    opacity: 0.04;
+    position: absolute;
+    height: 60%;
+    bottom: 20%; /*?????????????????????*/
+}
 
 
+@keyframes showup {
+    0% {
+        opacity: 0;
+    }
 
+    20% {
+        opacity: 1;
+    }
 
+    80% {
+        opacity: 1;
+    }
 
+    100% {
+        opacity: 0;
+    }
+}
 
+@keyframes slidein {
+    0% {
+        margin-left: -800px;
+    }
 
+    20% {
+        margin-left: -800px;
+    }
 
+    35% {
+        margin-left: 0px;
+    }
 
+    100% {
+        margin-left: 0px;
+    }
+}
 
+@keyframes reveal {
+    0% {
+        opacity: 0;
+        width: 0px;
+    }
 
+    20% {
+        opacity: 1;
+        width: 0px;
+    }
 
+    30% {
+        width: 355px;
+    }
 
+    80% {
+        opacity: 1;
+        width: 800px;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    100% {
+        opacity: 0;
+        width: 800px;
+    }
+}
 
 
 
@@ -843,6 +853,7 @@ background:linear-gradient(-90deg, rgba(119, 119, 119, 1), rgba(119, 119, 119, 0
 /* STEFAN's PART END */
 
 /* ISAAC's PART START */
+
 
 /*styling of the card*/
 .card{
@@ -1005,7 +1016,6 @@ text-align: center;
     color: #fff;
     height: 3vh;
 
-}
 
 
 
@@ -1090,3 +1100,7 @@ text-align: center;
 
 
 
+
+
+
+/* ISAAC's PART END */
