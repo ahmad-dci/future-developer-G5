@@ -15,10 +15,6 @@
 
 
 /*RESET*/
-<<<<<<< HEAD
-
-=======
->>>>>>> 6fcf297e84144ca8cc8d075724352c5603c21482
 * {
     margin: 0;
     padding: 0;
@@ -36,18 +32,6 @@
     --secondColor: rgba(255, 255, 255, 1);
     --thirdColor: rgba(119, 119, 119, 1);
 }
-<<<<<<< HEAD
-
-
-/* GRID CONTAINER & AREA*/
-
-.gridContainer {
-    display: grid;
-    grid-template-areas: 'jay jay jay jay jay jay' 'javier javier javier javier javier javier' 'stefan stefan stefan stefan stefan stefan' 'isaac isaac isaac isaac isaac isaac';
-}
-
-
-=======
 
 /* GRID CONTAINER & AREA*/
 .gridContainer {
@@ -59,7 +43,6 @@
         'isaac isaac isaac isaac isaac isaac';
 }
 
->>>>>>> 6fcf297e84144ca8cc8d075724352c5603c21482
 /* GRID CONTAINER & AREA END */
 
 
@@ -72,10 +55,7 @@
     z-index: 9999;
     font-size: 3rem;
     border-radius: 50%;
-<<<<<<< HEAD
-=======
     /* background-color: var(--secondColor); */
->>>>>>> 6fcf297e84144ca8cc8d075724352c5603c21482
     text-shadow: 2px 2px 12px rgb(59, 59, 59);
     transition: color 0.3s ease-in;
 }
@@ -92,8 +72,6 @@
     box-shadow: 1px 1px 12px rgb(29, 29, 29);
 }
 
-<<<<<<< HEAD
-=======
 /* RETURN TO TOP BUTTON END*/
 
 
@@ -125,33 +103,11 @@
 
 
 
->>>>>>> 6fcf297e84144ca8cc8d075724352c5603c21482
 
 /* RETURN TO TOP BUTTON END*/
 
 
 /* JAY's PART START */
-<<<<<<< HEAD
-
-.header {
-    grid-area: jay;
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    justify-content: center;
-    justify-items: center;
-    overflow: hidden;
-}
-
-video {
-    position: absolute;
-    opacity: .5;
-    width: 100%;
-    overflow: hidden;
-}
-
-.header img {
-=======
 .header-J {
 
     position: relative;
@@ -164,70 +120,12 @@ video {
 }
 
 video {
->>>>>>> 6fcf297e84144ca8cc8d075724352c5603c21482
     position: absolute;
     opacity: .5;
     object-fit: cover;
     width: 100%;
     overflow: hidden;
     height: 100%;
-<<<<<<< HEAD
-    /* opacity: .8; */
-    z-index: 0;
-    overflow: hidden;
-}
-
-.gridContainer>.header>#nav>ul {
-    position: absolute;
-    margin: 1rem;
-    z-index: 1;
-    left: 13vw;
-}
-
-.header>#nav>ul>li {
-    list-style-type: none;
-    float: left;
-}
-
-#nav>ul>li>a {
-    text-decoration: none;
-    text-align: center;
-    color: black;
-    margin: 1rem;
-    width: 15vw;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    padding: 15px;
-    background-color: var(--thirdColor);
-    float: left;
-    box-shadow: 10px 10px 30px rgb(92, 86, 86);
-    border-radius: 10%;
-    text-align: center;
-    transition: transform .5s
-}
-
-#nav>ul>li>a:hover {
-    transform: scale(1.3);
-    background-color: aliceblue;
-    color: black
-}
-
-#nav {
-    /* position: relative; */
-}
-
-.G-05 {
-    position: absolute;
-    left: 45vw;
-    top: 50vh;
-    color: black;
-    width: 10vw;
-    padding: 5vh;
-    background-color: var(--thirdColor);
-    border-radius: 10%;
-    text-align: center;
-    box-shadow: 10px 10px 10px;
-=======
 
 }
 
@@ -293,34 +191,10 @@ video {
     position: absolute;
     left: 30%;
     top: 40%;
->>>>>>> 6fcf297e84144ca8cc8d075724352c5603c21482
     animation: animate cubic-bezier(0.445, 0.05, 0.55, 0.95);
     animation-duration: 3s;
     transition: 1s
 }
-<<<<<<< HEAD
-
-.G-05>h3 {
-    color: var(--firstcolor);
-    animation: animate cubic-bezier(0.445, 0.05, 0.55, 0.95);
-    animation-duration: 6s
-}
-
-
-/* it is the subnav under G-05 icon */
-
-.subNav {
-    position: relative;
-    list-style-type: none;
-    LEFT: 9VH;
-    top: -2.5vh;
-    opacity: .7;
-    height: 0;
-    transition: 1s;
-}
-
-.subNav>li {
-=======
 .G-05-J {
     position: relative;
     
@@ -350,42 +224,26 @@ video {
 }
 
 .subNav-J>li {
->>>>>>> 6fcf297e84144ca8cc8d075724352c5603c21482
     margin: 1rem;
     position: absolute;
     width: 0;
     height: 0;
-<<<<<<< HEAD
-    /* padding: 50px; */
-=======
->>>>>>> 6fcf297e84144ca8cc8d075724352c5603c21482
     background-color: var(--thirdColor);
     text-align: center;
     border-radius: 50%;
     overflow: hidden;
-<<<<<<< HEAD
-    transition: 1s
-}
-
-.subNav>li>a {
-=======
 
     transition: 1s
 }
 
 .subNav-J>li>a {
->>>>>>> 6fcf297e84144ca8cc8d075724352c5603c21482
     text-decoration: none;
     color: black;
     text-align: center;
     letter-spacing: 2px
 }
 
-<<<<<<< HEAD
-.G-05:hover {
-=======
 .G-05-J h3:hover {
->>>>>>> 6fcf297e84144ca8cc8d075724352c5603c21482
     cursor: pointer;
     top: 48vh;
     transform: scale(1.02);
@@ -393,12 +251,8 @@ video {
     background-color: rgba(255, 255, 255, .6)
 }
 
-<<<<<<< HEAD
-.G-05:hover .subNav>:first-child {
-=======
 /* The positioning of names after hoverin g5 */
 .G-05-J:hover .subNav-J>:first-child {
->>>>>>> 6fcf297e84144ca8cc8d075724352c5603c21482
     width: 12vw;
     transform: translate(11vw, -20vh);
     padding: 50px;
@@ -407,11 +261,7 @@ video {
     background-color: rgba(255, 255, 255, .6);
 }
 
-<<<<<<< HEAD
-.G-05:hover .subNav>:nth-child(2) {
-=======
 .G-05-J:hover .subNav-J>:nth-child(2) {
->>>>>>> 6fcf297e84144ca8cc8d075724352c5603c21482
     width: 12vw;
     transform: translate(-20vw, -20vh);
     padding: 50px;
@@ -420,11 +270,7 @@ video {
     background-color: rgba(255, 255, 255, .6)
 }
 
-<<<<<<< HEAD
-.G-05:hover .subNav>:nth-child(3) {
-=======
 .G-05-J:hover .subNav-J>:nth-child(3) {
->>>>>>> 6fcf297e84144ca8cc8d075724352c5603c21482
     width: 12vw;
     transform: translate(-20vw, 10vh);
     padding: 50px;
@@ -433,11 +279,7 @@ video {
     background-color: rgba(255, 255, 255, .6)
 }
 
-<<<<<<< HEAD
-.G-05:hover .subNav>:last-child {
-=======
 .G-05-J:hover .subNav-J>:last-child {
->>>>>>> 6fcf297e84144ca8cc8d075724352c5603c21482
     width: 12vw;
     transform: translate(11vw, 10vh);
     padding: 50px;
@@ -447,10 +289,7 @@ video {
 }
 /* END OF THE POSITIONING OF NAMES UNDER G-5 */
 
-<<<<<<< HEAD
-=======
 /* START OF NABAR ANIMATION */
->>>>>>> 6fcf297e84144ca8cc8d075724352c5603c21482
 @keyframes animate {
     0% {
         opacity: 0;
@@ -458,19 +297,11 @@ video {
         transform: rotateY(90deg);
         filter: blur(10px)
     }
-<<<<<<< HEAD
-=======
-
->>>>>>> 6fcf297e84144ca8cc8d075724352c5603c21482
     100% {
         opacity: 1;
         left: 30%;
         transform: rotateY(0deg);
         filter: blur(0)
-<<<<<<< HEAD
-    }
-}
-=======
     }
 
     }
@@ -523,40 +354,10 @@ video {
 
 
 
->>>>>>> 6fcf297e84144ca8cc8d075724352c5603c21482
 
 
 /* JAY's PART END */
 
-<<<<<<< HEAD
-
-/* JAVIER's PART START */
-
-.content {
-    grid-area: javier;
-    position: relative;
-    height: 100vh;
-}
-
-.item1 h1 {
-    left: 42%;
-    position: absolute;
-    display: block;
-    margin-top: 2rem
-}
-
-.item2 {}
-
-.item2 p {
-    /* background-color: var(--thirdColor); */
-    text-align: center;
-}
-
-
-/* JAVIER's PART END  */
-
-
-=======
 /* JAVIER's PART START */
 
 
@@ -809,207 +610,11 @@ video {
 
 /* JAVIER's PART END  */
 
->>>>>>> 6fcf297e84144ca8cc8d075724352c5603c21482
 /* STEFAN's PART START */
 
 .stefan {
     grid-area: stefan;
     position: relative;
-<<<<<<< HEAD
-    width: 100vw;
-}
-
-.containerBarS {
-    position: absolute;
-    width: 100vw;
-    background: rgba(115, 115, 115, 0.6)
-}
-
-.logoFA {
-    font-size: 3rem;
-    color: var(--thirdColor);
-}
-
-
-/* Knowledge-Bar */
-
-#bar {
-    list-style: none;
-}
-
-
-/* Bar-Top-Part */
-
-#bar li div.top {
-    background-color: rgba(119, 119, 119, 0.6);
-    position: relative;
-    width: 100px;
-    height: 40px;
-    /*-moz-border-radius: 100px/40px; -webkit-border-radius: 100px 40px;*/
-    border-radius: 100px/40px;
-}
-
-
-/* logoFAs hidden/unhidden for hover */
-
-#bar li div.top i {
-    display: none;
-}
-
-#bar li:hover div.top i {
-    display: inline;
-}
-
-
-/* Bar-Bottom-Part */
-
-#bar li div.bottom {
-    background-color: rgba(115, 115, 115, 0.6);
-    margin-top: -40px;
-    position: relative;
-    width: 100px;
-    -moz-border-radius: 100px/40px;
-    -webkit-border-radius: 100px 40px;
-    border-radius: 100px/40px;
-}
-
-
-/* Z-Index Hierarchies & 3D-Color Effect*/
-
-#javaScript div.top {
-    z-index: 99;
-}
-
-#javaScript div.bottom {
-    z-index: 98;
-    height: 120px;
-}
-
-#javaScript:hover div.top {
-    z-index: 999;
-    background-color: rgba(119, 119, 119, 0.2);
-}
-
-#javaScript:hover div.bottom {
-    z-index: 998;
-    background-color: rgba(119, 119, 119, 1);
-    background: linear-gradient(-90deg, rgba(119, 119, 119, 1), rgba(119, 119, 119, 0.4));
-    /* background:-webkit-gradient(linear, 0 top, 0 bottom, from(#1a6c90), to(#14506b));*/
-}
-
-#css div.top {
-    z-index: 97;
-}
-
-#css div.bottom {
-    z-index: 96;
-    height: 120px;
-}
-
-#css:hover div.top {
-    z-index: 997;
-    background-color: rgba(119, 119, 119, 0.2);
-}
-
-#css:hover div.bottom {
-    z-index: 996;
-    background-color: rgba(119, 119, 119, 1);
-    background: linear-gradient(-90deg, rgba(119, 119, 119, 1), rgba(119, 119, 119, 0.4));
-}
-
-#html div.top {
-    z-index: 95;
-}
-
-#html div.bottom {
-    z-index: 94;
-    height: 120px;
-}
-
-#html:hover div.top {
-    z-index: 995;
-    background-color: rgba(119, 119, 119, 0.2);
-}
-
-#html:hover div.bottom {
-    z-index: 994;
-    background-color: rgba(119, 119, 119, 1);
-    background: linear-gradient(-90deg, rgba(119, 119, 119, 1), rgba(119, 119, 119, 0.4));
-}
-
-#github div.top {
-    z-index: 93;
-}
-
-#github div.bottom {
-    z-index: 92;
-    height: 120px;
-}
-
-#github:hover div.top {
-    z-index: 993;
-    background-color: rgba(119, 119, 119, 0.2);
-}
-
-#github:hover div.bottom {
-    z-index: 992;
-    background-color: rgba(119, 119, 119, 1);
-    background: linear-gradient(-90deg, rgba(119, 119, 119, 1), rgba(119, 119, 119, 0.4));
-}
-
-#git div.top {
-    z-index: 91;
-}
-
-#git div.bottom {
-    z-index: 90;
-    height: 120px;
-}
-
-#git:hover div.top {
-    z-index: 991;
-    background-color: rgba(119, 119, 119, 0.2);
-}
-
-#git:hover div.bottom {
-    z-index: 990;
-    background-color: rgba(119, 119, 119, 1);
-    background: linear-gradient(-90deg, rgba(119, 119, 119, 1), rgba(119, 119, 119, 0.4));
-}
-
-#linux div.top {
-    z-index: 89;
-}
-
-#linux div.bottom {
-    z-index: 88;
-    height: 120px;
-}
-
-#linux:hover div.top {
-    z-index: 989;
-    background-color: rgba(119, 119, 119, 0.2);
-}
-
-#linux:hover div.bottom {
-    z-index: 988;
-    ;
-    background-color: rgba(119, 119, 119, 1);
-    background: linear-gradient(-90deg, rgba(119, 119, 119, 1), rgba(119, 119, 119, 0.4));
-}
-
-.logoDCI {
-    margin-top: -170px;
-    transform: skewX(15deg);
-    z-index: -999
-}
-
-
-/* STEFAN's PART END */
-
-
-/* ISAAC's PART START */
-=======
     /* width: 100vw; */
     height: 90vh;
     /* padding: 5rem; */
@@ -1288,28 +893,29 @@ video {
 
 /*styling of the images positioning them in their various spans*/
 .container div:nth-child(4) > span{
-    background: url(/img/7m.jpg);
-    background-size: cover;
+    background: url(/images/1m.jpg);
     background-repeat: no-repeat;
-    position: absolute;
-    height: 100%;
+    background-size: 360px 360px;
 }
 
 .container div:nth-child(2)> span{
-    background: url(/img/1m.jpg);
-    background-size: cover;
-
+    background: url(/images/2m.jpg);
+    background-repeat: no-repeat;
+    background-size: 360px 360px;
 }
 
 .container div:nth-child(3)> span{
-    background: url(/img/2m.jpg) ;
-    background-size: cover;
+    background: url(/images/6m.jpg) ;
+    background-repeat: no-repeat;
+    background-size: 360px 360px;
 
 }
 
 .container div:nth-child(5)> span{
-    background: url(/img/6m.jpg) ;
-    background-size: cover;
+    background-image: url(/images/4m.jpg) ;
+    background-repeat: no-repeat;
+    background-size: 360px 360px;
+
 
 }
 
@@ -1479,34 +1085,6 @@ text-align: center;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
->>>>>>> 6fcf297e84144ca8cc8d075724352c5603c21482
 
 
 /* ISAAC's PART END */
