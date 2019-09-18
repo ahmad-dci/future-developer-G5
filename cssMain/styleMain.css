@@ -15,13 +15,17 @@
 
 
 /*RESET*/
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6fcf297e84144ca8cc8d075724352c5603c21482
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     color: var(--thirdColor);
     font-family: 'Lato', Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
 }
 
 
@@ -32,6 +36,7 @@
     --secondColor: rgba(255, 255, 255, 1);
     --thirdColor: rgba(119, 119, 119, 1);
 }
+<<<<<<< HEAD
 
 
 /* GRID CONTAINER & AREA*/
@@ -42,6 +47,19 @@
 }
 
 
+=======
+
+/* GRID CONTAINER & AREA*/
+.gridContainer {
+    display: grid;
+    grid-template-areas:
+        'jay jay jay jay jay jay'
+        'javier javier javier javier javier javier'
+        'stefan stefan stefan stefan stefan stefan'
+        'isaac isaac isaac isaac isaac isaac';
+}
+
+>>>>>>> 6fcf297e84144ca8cc8d075724352c5603c21482
 /* GRID CONTAINER & AREA END */
 
 
@@ -54,6 +72,10 @@
     z-index: 9999;
     font-size: 3rem;
     border-radius: 50%;
+<<<<<<< HEAD
+=======
+    /* background-color: var(--secondColor); */
+>>>>>>> 6fcf297e84144ca8cc8d075724352c5603c21482
     text-shadow: 2px 2px 12px rgb(59, 59, 59);
     transition: color 0.3s ease-in;
 }
@@ -70,11 +92,46 @@
     box-shadow: 1px 1px 12px rgb(29, 29, 29);
 }
 
+<<<<<<< HEAD
+=======
+/* RETURN TO TOP BUTTON END*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> 6fcf297e84144ca8cc8d075724352c5603c21482
 
 /* RETURN TO TOP BUTTON END*/
 
 
 /* JAY's PART START */
+<<<<<<< HEAD
 
 .header {
     grid-area: jay;
@@ -94,9 +151,27 @@ video {
 }
 
 .header img {
+=======
+.header-J {
+
+    position: relative;
+    grid-area: jay;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(rgba(73, 70, 70, 0.8), rgba(129, 111, 111, 0.5)), url(/images/G-5.jpg) center no-repeat;
+    background-size: cover
+}
+
+video {
+>>>>>>> 6fcf297e84144ca8cc8d075724352c5603c21482
     position: absolute;
+    opacity: .5;
+    object-fit: cover;
     width: 100%;
+    overflow: hidden;
     height: 100%;
+<<<<<<< HEAD
     /* opacity: .8; */
     z-index: 0;
     overflow: hidden;
@@ -152,10 +227,78 @@ video {
     border-radius: 10%;
     text-align: center;
     box-shadow: 10px 10px 10px;
+=======
+
+}
+
+/* start of the navbar with all the animation and etc */
+#nav-J {
+    position: relative;
+}
+
+#nav-J>ul {
+    display: flex;
+    position: absolute;
+    right: 5rem;
+}
+
+#nav-J>ul>li {
+    list-style-type: none;
+    transform: translate(100rem);
+    margin: 2rem 1rem;
+    animation: slideIn 1s forwards
+}
+
+#nav-J>ul>li>a {
+    text-decoration: none;
+    font-size: .7rem;
+
+    text-transform: uppercase;
+    color: var(--thirdColor);
+    padding: 1rem;
+    letter-spacing: 2px;
+}
+
+#nav-J>ul>li:nth-child(2) {
+    animation-delay: .25s
+}
+
+#nav>ul>li:nth-child(3) {
+    animation-delay: .5s
+}
+
+#nav-J>ul>li:nth-child(4) {
+    animation-delay: .75s
+}
+
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100rem);
+
+    }
+
+    to {
+        transform: translateX(0)
+    }
+}
+
+/*END OF THE NAVBAR   */
+
+
+
+/*start of the legendary g 5 AND THE CHILDREN */
+.mainG5-J{
+    position: absolute;
+    position: absolute;
+    left: 30%;
+    top: 40%;
+>>>>>>> 6fcf297e84144ca8cc8d075724352c5603c21482
     animation: animate cubic-bezier(0.445, 0.05, 0.55, 0.95);
     animation-duration: 3s;
     transition: 1s
 }
+<<<<<<< HEAD
 
 .G-05>h3 {
     color: var(--firstcolor);
@@ -177,27 +320,72 @@ video {
 }
 
 .subNav>li {
+=======
+.G-05-J {
+    position: relative;
+    
+    text-align: center;
+    
+}
+
+.G-05-J>h3 {
+    font-size: 2rem;
+    padding: 3rem;
+    animation: animate cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    animation-duration: 3s;
+    letter-spacing: 2px;
+    transition: 2s
+}
+
+/* it is the subnav under G-05 icon */
+.subNav-J {
+    position: absolute;
+    list-style-type: none;
+    LEFT:50%;
+    top: 50%;
+    opacity: .7;
+    height: 0;
+    transition: 1s;
+
+}
+
+.subNav-J>li {
+>>>>>>> 6fcf297e84144ca8cc8d075724352c5603c21482
     margin: 1rem;
     position: absolute;
-    /* width: 12vw; */
     width: 0;
     height: 0;
+<<<<<<< HEAD
     /* padding: 50px; */
+=======
+>>>>>>> 6fcf297e84144ca8cc8d075724352c5603c21482
     background-color: var(--thirdColor);
     text-align: center;
     border-radius: 50%;
     overflow: hidden;
+<<<<<<< HEAD
     transition: 1s
 }
 
 .subNav>li>a {
+=======
+
+    transition: 1s
+}
+
+.subNav-J>li>a {
+>>>>>>> 6fcf297e84144ca8cc8d075724352c5603c21482
     text-decoration: none;
     color: black;
     text-align: center;
     letter-spacing: 2px
 }
 
+<<<<<<< HEAD
 .G-05:hover {
+=======
+.G-05-J h3:hover {
+>>>>>>> 6fcf297e84144ca8cc8d075724352c5603c21482
     cursor: pointer;
     top: 48vh;
     transform: scale(1.02);
@@ -205,7 +393,12 @@ video {
     background-color: rgba(255, 255, 255, .6)
 }
 
+<<<<<<< HEAD
 .G-05:hover .subNav>:first-child {
+=======
+/* The positioning of names after hoverin g5 */
+.G-05-J:hover .subNav-J>:first-child {
+>>>>>>> 6fcf297e84144ca8cc8d075724352c5603c21482
     width: 12vw;
     transform: translate(11vw, -20vh);
     padding: 50px;
@@ -214,7 +407,11 @@ video {
     background-color: rgba(255, 255, 255, .6);
 }
 
+<<<<<<< HEAD
 .G-05:hover .subNav>:nth-child(2) {
+=======
+.G-05-J:hover .subNav-J>:nth-child(2) {
+>>>>>>> 6fcf297e84144ca8cc8d075724352c5603c21482
     width: 12vw;
     transform: translate(-20vw, -20vh);
     padding: 50px;
@@ -223,7 +420,11 @@ video {
     background-color: rgba(255, 255, 255, .6)
 }
 
+<<<<<<< HEAD
 .G-05:hover .subNav>:nth-child(3) {
+=======
+.G-05-J:hover .subNav-J>:nth-child(3) {
+>>>>>>> 6fcf297e84144ca8cc8d075724352c5603c21482
     width: 12vw;
     transform: translate(-20vw, 10vh);
     padding: 50px;
@@ -232,7 +433,11 @@ video {
     background-color: rgba(255, 255, 255, .6)
 }
 
+<<<<<<< HEAD
 .G-05:hover .subNav>:last-child {
+=======
+.G-05-J:hover .subNav-J>:last-child {
+>>>>>>> 6fcf297e84144ca8cc8d075724352c5603c21482
     width: 12vw;
     transform: translate(11vw, 10vh);
     padding: 50px;
@@ -240,7 +445,12 @@ video {
     box-shadow: 10px 10px 10px;
     background-color: rgba(255, 255, 255, .6)
 }
+/* END OF THE POSITIONING OF NAMES UNDER G-5 */
 
+<<<<<<< HEAD
+=======
+/* START OF NABAR ANIMATION */
+>>>>>>> 6fcf297e84144ca8cc8d075724352c5603c21482
 @keyframes animate {
     0% {
         opacity: 0;
@@ -248,17 +458,77 @@ video {
         transform: rotateY(90deg);
         filter: blur(10px)
     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6fcf297e84144ca8cc8d075724352c5603c21482
     100% {
         opacity: 1;
-        left: 45vw;
+        left: 30%;
         transform: rotateY(0deg);
         filter: blur(0)
+<<<<<<< HEAD
     }
 }
+=======
+    }
+
+    }
+
+/* END OF NAVBAR ANIMATION */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> 6fcf297e84144ca8cc8d075724352c5603c21482
 
 
 /* JAY's PART END */
 
+<<<<<<< HEAD
 
 /* JAVIER's PART START */
 
@@ -286,11 +556,266 @@ video {
 /* JAVIER's PART END  */
 
 
+=======
+/* JAVIER's PART START */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* JAVIER's PART END  */
+
+>>>>>>> 6fcf297e84144ca8cc8d075724352c5603c21482
 /* STEFAN's PART START */
 
 .stefan {
     grid-area: stefan;
     position: relative;
+<<<<<<< HEAD
     width: 100vw;
 }
 
@@ -484,6 +1009,504 @@ video {
 
 
 /* ISAAC's PART START */
+=======
+    /* width: 100vw; */
+    height: 90vh;
+    /* padding: 5rem; */
+    background: radial-gradient(circle, var(--secondColor), var(--thirdColor));
+}
+.containerHeaderS{
+    
+}
+
+.containerHeaderS div:nth-child(1), .containerHeaderS div:nth-child(2){
+    font-size: 3rem;
+    color: var(--secondColor);
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 2rem 0;
+    display: inline-block;
+}
+
+/* .firstPartS */
+.containerHeaderS div:nth-child(1) {
+    animation: showup 7s infinite;
+}
+ 
+.containerHeaderS div:nth-child(2) {
+    width: 0px;
+    animation: reveal 7s infinite;
+}
+
+.sublineS span {
+    margin-left: -355px;
+    animation: slidein 7s infinite;
+    color: var(--secondColor);
+}
+
+.wrapperIconS {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    font-size: 8rem;
+}
+#logoDCIS {
+    opacity: 0.04;
+    position: absolute;
+    height: 60%;
+    bottom: 20%; /*?????????????????????*/
+}
+
+
+@keyframes showup {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes slidein {
+    0% {
+        margin-left: -800px;
+    }
+
+    20% {
+        margin-left: -800px;
+    }
+
+    35% {
+        margin-left: 0px;
+    }
+
+    100% {
+        margin-left: 0px;
+    }
+}
+
+@keyframes reveal {
+    0% {
+        opacity: 0;
+        width: 0px;
+    }
+
+    20% {
+        opacity: 1;
+        width: 0px;
+    }
+
+    30% {
+        width: 355px;
+    }
+
+    80% {
+        opacity: 1;
+        width: 800px;
+    }
+
+    100% {
+        opacity: 0;
+        width: 800px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* STEFAN's PART END */
+
+/* ISAAC's PART START */
+
+
+/*styling of the card*/
+.card{
+    width: 360px;
+    height: 360px;
+    background: black;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    margin: 10px ;
+    position:relative;
+    border-radius: 50px;
+    overflow: hidden;
+   
+   
+
+}
+/*style the whole span*/
+.card span{
+    height: 100%;
+    left: 0;
+    position: absolute;
+   /* width: 100%;* initial width of image */
+   transition: 1s;
+   margin: 0px;
+   
+   
+}
+
+/*styling of the images positioning them in their various spans*/
+.container div:nth-child(4) > span{
+    background: url(/img/7m.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 100%;
+}
+
+.container div:nth-child(2)> span{
+    background: url(/img/1m.jpg);
+    background-size: cover;
+
+}
+
+.container div:nth-child(3)> span{
+    background: url(/img/2m.jpg) ;
+    background-size: cover;
+
+}
+
+.container div:nth-child(5)> span{
+    background: url(/img/6m.jpg) ;
+    background-size: cover;
+
+}
+
+/*styling of the spans*/
+.card  span:nth-child(1){
+    z-index: 10;
+    width: 25%;
+    transition-delay: 0;
+    
+    
+}
+.card span:nth-child(2){
+    z-index: 9;
+    width: 50%;
+  
+   
+}
+.card span:nth-child(3){
+    z-index: 8;
+    width: 75%;
+    transition-delay: 0.6s;
+    
+    
+}
+.card span:nth-child(4){
+    z-index: 7;
+    width: 100%;
+    transition-delay: 0.8s;
+    
+    
+}
+  /*style of the card hover and span*/
+ .card:hover span{
+    transform: translateY(-100%);
+    transition: 1s;
+}
+
+.card:hover span:nth-child(1){
+  
+    transition-delay: 0.8s;
+}
+
+.card:hover span:nth-child(2){
+    
+    transition-delay: 0.6s;
+}
+
+.card:hover span:nth-child(3){
+    transition-delay: 0.3s;
+}
+
+.card:hover span:nth-child(4){
+    transition-delay: 0s;
+}
+
+/*style of the main content inside the card*/
+.content{
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    transform: translateY(100%);
+    transition: 2s;
+}
+.content p{
+    color: #999;
+}
+
+/*style of the content link*/
+.content a{
+    width: 100px;
+    text-decoration: none;
+    border-radius: 40px;
+    border: 1px solid #fff;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    color: white;
+
+}
+
+/*style hover content inside the card*/
+.card:hover .content{
+    transform: translateY(0%)
+}
+/*container style*/
+.container {
+    background-color:rgb(250, 245, 245);
+    display: flex;
+    flex-direction: row;
+    padding: 22px;
+    text-align: center;
+
+}
+  /*styling of the contact to show hover*/
+.contact{
+    display: flex;
+color: rgb(15, 12, 12);
+align-items: center;
+text-align: center;
+
+}
+/*styling of the footer*/
+.footer{
+    background-color: black;
+    text-align: center;
+    color: #fff;
+    height: 3vh;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> 6fcf297e84144ca8cc8d075724352c5603c21482
 
 
 /* ISAAC's PART END */
