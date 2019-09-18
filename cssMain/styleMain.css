@@ -863,6 +863,8 @@ body{
     
     
 }
+
+/*styling of the card*/
 .card{
     width: 360px;
     height: 360px;
@@ -887,6 +889,8 @@ body{
    
    
 }
+
+/*styling of the images positioning them in their various spans*/
 .container div:nth-child(4) > span{
     background: url(/img/7m.jpg);
     background-size: cover;
@@ -912,6 +916,8 @@ body{
     background-size: cover;
 
 }
+
+/*styling of the spans*/
 .card  span:nth-child(1){
     z-index: 10;
     width: 25%;
@@ -922,7 +928,6 @@ body{
 .card span:nth-child(2){
     z-index: 9;
     width: 50%;
-    transition-delay: 0.3s;
   
    
 }
@@ -940,7 +945,7 @@ body{
     
     
 }
-
+  /*style of the card hover and span*/
  .card:hover span{
     transform: translateY(-100%);
     transition: 1s;
@@ -963,6 +968,8 @@ body{
 .card:hover span:nth-child(4){
     transition-delay: 0s;
 }
+
+/*style of the main content inside the card*/
 .content{
     color: #fff;
     text-align: center;
@@ -976,6 +983,8 @@ body{
 .content p{
     color: #999;
 }
+
+/*style of the content link*/
 .content a{
     width: 100px;
     text-decoration: none;
@@ -987,10 +996,12 @@ body{
     color: white;
 
 }
+
+/*style hover content inside the card*/
 .card:hover .content{
     transform: translateY(0%)
 }
-
+/*container style*/
 .container {
     background-color:rgb(250, 245, 245);
     display: flex;
@@ -999,7 +1010,7 @@ body{
     text-align: center;
 
 }
-
+  /*styling of the contact to show hover*/
 .contact{
     display: flex;
 color: rgb(15, 12, 12);
@@ -1007,7 +1018,7 @@ align-items: center;
 text-align: center;
 
 }
-
+/*styling of the footer*/
 .footer{
     background-color: black;
     text-align: center;
