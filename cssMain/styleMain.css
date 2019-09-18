@@ -96,8 +96,6 @@
 
 
 
-
-
 /* JAY's PART START */
 
 .header-J {
@@ -299,220 +297,9 @@ video {
         filter: blur(0)
     }
 
-}
+    }
 
 /* END OF NAVBAR ANIMATION */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -804,19 +591,18 @@ video {
 /* JAVIER's PART END  */
 
 /* STEFAN's PART START */
-
 .stefan {
     grid-area: stefan;
     position: relative;
     width: 100vw;
-}
+    }
 
 
 .containerBarS {
     position: absolute;
     width: 100vw;
     background: rgba(115, 115, 115, 0.6)
-}
+}    
 
 .logoFA {
     font-size: 3rem;
@@ -829,163 +615,61 @@ video {
 }
 
 /* Bar-Top-Part */
-#bar li div.top {
-    background-color: rgba(119, 119, 119, 0.6);
-    position: relative;
-    width: 100px;
-    height: 40px;
-    /*-moz-border-radius: 100px/40px; -webkit-border-radius: 100px 40px;*/
-    border-radius: 100px/40px;
-}
+#bar li div.top { background-color:rgba(119, 119, 119, 0.6); position:relative;
+    width:100px; height:40px; /*-moz-border-radius: 100px/40px; -webkit-border-radius: 100px 40px;*/ border-radius: 100px/40px; }
 
 /* logoFAs hidden/unhidden for hover */
-#bar li div.top i {
-    display: none;
-}
-
-#bar li:hover div.top i {
-    display: inline;
-}
+ #bar li div.top i { display:none; }
+ #bar li:hover div.top i { display:inline; }
 
 /* Bar-Bottom-Part */
-#bar li div.bottom {
-    background-color: rgba(115, 115, 115, 0.6);
-    margin-top: -40px;
-    position: relative;
-    width: 100px;
-    -moz-border-radius: 100px/40px;
-    -webkit-border-radius: 100px 40px;
-    border-radius: 100px/40px;
-}
+ #bar li div.bottom { background-color:rgba(115, 115, 115, 0.6); margin-top:-40px; position:relative;
+    width:100px; -moz-border-radius: 100px/40px; -webkit-border-radius: 100px 40px; border-radius: 100px/40px; }
 
 /* Z-Index Hierarchies & 3D-Color Effect*/
-#javaScript div.top {
-    z-index: 99;
-}
+#javaScript div.top { z-index:99; }
+#javaScript div.bottom { z-index:98; height:120px; }
+#javaScript:hover div.top { z-index:999; background-color:rgba(119, 119, 119, 0.2); }
+#javaScript:hover div.bottom { z-index:998; background-color: rgba(119, 119, 119, 1);
+background:linear-gradient(-90deg, rgba(119, 119, 119, 1), rgba(119, 119, 119, 0.4));/* background:-webkit-gradient(linear, 0 top, 0 bottom, from(#1a6c90), to(#14506b));*/ }
 
-#javaScript div.bottom {
-    z-index: 98;
-    height: 120px;
-}
+#css div.top { z-index:97; }
+#css div.bottom { z-index:96; height:120px; }
+#css:hover div.top { z-index:997; background-color:rgba(119, 119, 119, 0.2); }
+#css:hover div.bottom { z-index:996; background-color: rgba(119, 119, 119, 1);
+background:linear-gradient(-90deg, rgba(119, 119, 119, 1), rgba(119, 119, 119, 0.4));}
 
-#javaScript:hover div.top {
-    z-index: 999;
-    background-color: rgba(119, 119, 119, 0.2);
-}
+#html div.top { z-index:95; }
+#html div.bottom { z-index:94; height:120px; }
+#html:hover div.top { z-index:995; background-color:rgba(119, 119, 119, 0.2); }
+#html:hover div.bottom { z-index:994; background-color: rgba(119, 119, 119, 1);
+background:linear-gradient(-90deg, rgba(119, 119, 119, 1), rgba(119, 119, 119, 0.4));}
 
-#javaScript:hover div.bottom {
-    z-index: 998;
-    background-color: rgba(119, 119, 119, 1);
-    background: linear-gradient(-90deg, rgba(119, 119, 119, 1), rgba(119, 119, 119, 0.4));
-    /* background:-webkit-gradient(linear, 0 top, 0 bottom, from(#1a6c90), to(#14506b));*/
-}
+#github div.top { z-index:93; }
+#github div.bottom { z-index:92; height:120px; }
+#github:hover div.top { z-index:993; background-color:rgba(119, 119, 119, 0.2); }
+#github:hover div.bottom { z-index:992; background-color: rgba(119, 119, 119, 1);
+background:linear-gradient(-90deg, rgba(119, 119, 119, 1), rgba(119, 119, 119, 0.4));}
 
-#css div.top {
-    z-index: 97;
-}
+#git div.top { z-index:91; }
+#git div.bottom { z-index:90; height:120px; }
+#git:hover div.top { z-index:991; background-color:rgba(119, 119, 119, 0.2); }
+#git:hover div.bottom { z-index:990; background-color: rgba(119, 119, 119, 1);
+background:linear-gradient(-90deg, rgba(119, 119, 119, 1), rgba(119, 119, 119, 0.4));}
 
-#css div.bottom {
-    z-index: 96;
-    height: 120px;
-}
+#linux div.top { z-index:89; }
+#linux div.bottom { z-index:88; height:120px; }
+#linux:hover div.top { z-index:989; background-color:rgba(119, 119, 119, 0.2); }
+#linux:hover div.bottom { z-index:988;; background-color: rgba(119, 119, 119, 1);
+background:linear-gradient(-90deg, rgba(119, 119, 119, 1), rgba(119, 119, 119, 0.4));}
 
-#css:hover div.top {
-    z-index: 997;
-    background-color: rgba(119, 119, 119, 0.2);
-}
-
-#css:hover div.bottom {
-    z-index: 996;
-    background-color: rgba(119, 119, 119, 1);
-    background: linear-gradient(-90deg, rgba(119, 119, 119, 1), rgba(119, 119, 119, 0.4));
-}
-
-#html div.top {
-    z-index: 95;
-}
-
-#html div.bottom {
-    z-index: 94;
-    height: 120px;
-}
-
-#html:hover div.top {
-    z-index: 995;
-    background-color: rgba(119, 119, 119, 0.2);
-}
-
-#html:hover div.bottom {
-    z-index: 994;
-    background-color: rgba(119, 119, 119, 1);
-    background: linear-gradient(-90deg, rgba(119, 119, 119, 1), rgba(119, 119, 119, 0.4));
-}
-
-#github div.top {
-    z-index: 93;
-}
-
-#github div.bottom {
-    z-index: 92;
-    height: 120px;
-}
-
-#github:hover div.top {
-    z-index: 993;
-    background-color: rgba(119, 119, 119, 0.2);
-}
-
-#github:hover div.bottom {
-    z-index: 992;
-    background-color: rgba(119, 119, 119, 1);
-    background: linear-gradient(-90deg, rgba(119, 119, 119, 1), rgba(119, 119, 119, 0.4));
-}
-
-#git div.top {
-    z-index: 91;
-}
-
-#git div.bottom {
-    z-index: 90;
-    height: 120px;
-}
-
-#git:hover div.top {
-    z-index: 991;
-    background-color: rgba(119, 119, 119, 0.2);
-}
-
-#git:hover div.bottom {
-    z-index: 990;
-    background-color: rgba(119, 119, 119, 1);
-    background: linear-gradient(-90deg, rgba(119, 119, 119, 1), rgba(119, 119, 119, 0.4));
-}
-
-#linux div.top {
-    z-index: 89;
-}
-
-#linux div.bottom {
-    z-index: 88;
-    height: 120px;
-}
-
-#linux:hover div.top {
-    z-index: 989;
-    background-color: rgba(119, 119, 119, 0.2);
-}
-
-#linux:hover div.bottom {
-    z-index: 988;
-    ;
-    background-color: rgba(119, 119, 119, 1);
-    background: linear-gradient(-90deg, rgba(119, 119, 119, 1), rgba(119, 119, 119, 0.4));
-}
-
-.logoDCI {
+.logoDCI{
     margin-top: -170px;
     transform: skewX(15deg);
     z-index: -999
+    
 }
+
 
 
 
@@ -1160,16 +844,168 @@ video {
 
 /* ISAAC's PART START */
 
+/*styling of the card*/
+.card{
+    width: 360px;
+    height: 360px;
+    background: black;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    margin: 10px ;
+    position:relative;
+    border-radius: 50px;
+    overflow: hidden;
+   
+   
+
+}
+/*style the whole span*/
+.card span{
+    height: 100%;
+    left: 0;
+    position: absolute;
+   /* width: 100%;* initial width of image */
+   transition: 1s;
+   margin: 0px;
+   
+   
+}
+
+/*styling of the images positioning them in their various spans*/
+.container div:nth-child(4) > span{
+    background: url(/img/7m.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 100%;
+}
+
+.container div:nth-child(2)> span{
+    background: url(/img/1m.jpg);
+    background-size: cover;
+
+}
+
+.container div:nth-child(3)> span{
+    background: url(/img/2m.jpg) ;
+    background-size: cover;
+
+}
+
+.container div:nth-child(5)> span{
+    background: url(/img/6m.jpg) ;
+    background-size: cover;
+
+}
+
+/*styling of the spans*/
+.card  span:nth-child(1){
+    z-index: 10;
+    width: 25%;
+    transition-delay: 0;
+    
+    
+}
+.card span:nth-child(2){
+    z-index: 9;
+    width: 50%;
+  
+   
+}
+.card span:nth-child(3){
+    z-index: 8;
+    width: 75%;
+    transition-delay: 0.6s;
+    
+    
+}
+.card span:nth-child(4){
+    z-index: 7;
+    width: 100%;
+    transition-delay: 0.8s;
+    
+    
+}
+  /*style of the card hover and span*/
+ .card:hover span{
+    transform: translateY(-100%);
+    transition: 1s;
+}
+
+.card:hover span:nth-child(1){
+  
+    transition-delay: 0.8s;
+}
 
+.card:hover span:nth-child(2){
+    
+    transition-delay: 0.6s;
+}
 
+.card:hover span:nth-child(3){
+    transition-delay: 0.3s;
+}
 
+.card:hover span:nth-child(4){
+    transition-delay: 0s;
+}
 
+/*style of the main content inside the card*/
+.content{
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    transform: translateY(100%);
+    transition: 2s;
+}
+.content p{
+    color: #999;
+}
 
+/*style of the content link*/
+.content a{
+    width: 100px;
+    text-decoration: none;
+    border-radius: 40px;
+    border: 1px solid #fff;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    color: white;
 
+}
 
+/*style hover content inside the card*/
+.card:hover .content{
+    transform: translateY(0%)
+}
+/*container style*/
+.container {
+    background-color:rgb(250, 245, 245);
+    display: flex;
+    flex-direction: row;
+    padding: 22px;
+    text-align: center;
 
+}
+  /*styling of the contact to show hover*/
+.contact{
+    display: flex;
+color: rgb(15, 12, 12);
+align-items: center;
+text-align: center;
 
+}
+/*styling of the footer*/
+.footer{
+    background-color: black;
+    text-align: center;
+    color: #fff;
+    height: 3vh;
 
+}
 
 
 
@@ -1254,158 +1090,3 @@ video {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ISAAC's PART END */
