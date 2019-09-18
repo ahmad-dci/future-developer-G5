@@ -96,238 +96,127 @@
 
 
 
-
 /* JAY's PART START */
-.header {
-    grid-area: jay;
-    width: 100%;
-    height: 100vh;
+.header-J {
 
     position: relative;
-    justify-content: center;
-    justify-items: center;
+    grid-area: jay;
+    width: 100vw;
+    height: 100vh;
     overflow: hidden;
-
-
-
+    background: linear-gradient(rgba(73, 70, 70, 0.8), rgba(129, 111, 111, 0.5)), url(/images/G-5.jpg) center no-repeat;
+    background-size: cover
 }
 
 video {
     position: absolute;
     opacity: .5;
+    object-fit: cover;
     width: 100%;
     overflow: hidden;
-
-}
-
-.header img {
-    position: absolute;
-    width: 100%;
     height: 100%;
-    /* opacity: .8; */
-    z-index: 0;
-    overflow: hidden;
-
 
 }
 
-
-
-.gridContainer>.header>#nav>ul {
-    position: absolute;
-    margin: 1rem;
-    z-index: 1;
-    left: 13vw;
-}
-
-
-.header>#nav>ul>li{
-list-style-type: none;
-float: left;
-
-}
-
-#nav>ul>li>a{
-    text-decoration: none;
-    text-align: center;
-     color: black;
-    margin: 1rem;
-width: 15vw;
-text-transform: uppercase;
-letter-spacing: 3px;
-padding: 15px;
-background-color: var(--thirdColor) ;
-float: left;
-box-shadow: 10px 10px 30px rgb(92, 86, 86);
-border-radius: 10%;
-text-align: center;
-transition: transform .5s
-
-}
-
-#nav>ul>li>a:hover{
-    transform: scale(1.3);
-    background-color: aliceblue;
-    color: black
-}
-#nav{
-    /* position: relative; */
-}
-
-.G-05{
-    position: absolute;
-    left: 45vw;
-    top: 50vh;
-    color: black;
-    width: 10vw;
-    padding: 5vh;
-    background-color: var(--thirdColor);
-    border-radius: 10%;
-    text-align: center;
-    box-shadow: 10px 10px 10px;
-    animation: animate  cubic-bezier(0.445, 0.05, 0.55, 0.95) ;
-    animation-duration: 3s;
-    transition: 1s
-}
-.G-05>h3{
-    color: var(--firstcolor);
-    animation: animate  cubic-bezier(0.445, 0.05, 0.55, 0.95) ;
-    animation-duration: 6s
-}
-/* it is the subnav under G-05 icon */
-.subNav{
+/* start of the navbar with all the animation and etc */
+#nav-J {
     position: relative;
+}
+
+#nav-J>ul {
+    display: flex;
+    position: absolute;
+    right: 5rem;
+}
+
+#nav-J>ul>li {
     list-style-type: none;
-    LEFT: 9VH;
-    top:-2.5vh;
-    opacity: .7;
-    height:0; 
-    transition: 1s;
-        
+    transform: translate(100rem);
+    margin: 2rem 1rem;
+    animation: slideIn 1s forwards
 }
 
-.subNav>li{
-    margin: 1rem;
-    position: absolute;
-    /* width: 12vw; */
-    width: 0;
-     height: 0;
-    /* padding: 50px; */
-    background-color: var(--thirdColor);
-    text-align: center;
-    border-radius: 50%;
-    overflow: hidden;
-
-transition: 1s
-}
-
-.subNav>li>a{
+#nav-J>ul>li>a {
     text-decoration: none;
-    color: black;
-    text-align: center;
-    letter-spacing: 2px
-}
-.G-05:hover{
-    cursor: pointer;
-    top: 48vh;
-    transform: scale(1.02);
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255,.6)
-   
+    font-size: .7rem;
+
+    text-transform: uppercase;
+    color: var(--thirdColor);
+    padding: 1rem;
+    letter-spacing: 2px;
 }
 
-.G-05:hover .subNav>:first-child{
-    width: 12vw;
-     transform: translate(11vw, -20vh);
-    padding: 50px;
-    height: auto;
-    box-shadow: 10px 10px 10px;
-    background-color: rgba(255, 255, 255,.6);
+#nav-J>ul>li:nth-child(2) {
+    animation-delay: .25s
 }
-.G-05:hover .subNav>:nth-child(2){
-    width: 12vw;
-    transform: translate(-20vw, -20vh);
-    padding: 50px;
-    height: auto;
-    box-shadow: 10px 10px 10px;
-    background-color: rgba(255, 255, 255,.6)
+
+#nav>ul>li:nth-child(3) {
+    animation-delay: .5s
 }
-.G-05:hover .subNav>:nth-child(3){
-    width: 12vw;
-     transform: translate(-20vw, 10vh);
-    padding: 50px;
-    height: auto;
-    box-shadow: 10px 10px 10px;
-    background-color: rgba(255, 255, 255,.6)
-}
-.G-05:hover .subNav>:last-child{
-    width: 12vw;
-     transform: translate(11vw, 10vh);
-    padding: 50px;
-    height: auto;
-    box-shadow: 10px 10px 10px;
-    background-color: rgba(255, 255, 255,.6)
+
+#nav-J>ul>li:nth-child(4) {
+    animation-delay: .75s
 }
 
 
-@keyframes animate {
-    0%{
-        opacity: 0;
-        left: 5vw;
-        transform: rotateY(90deg);
-        filter: blur(10px)
-    }
-    100%{
-        opacity: 1;
-        left: 45vw;
-        transform: rotateY(0deg);
-        filter: blur(0)
+@keyframes slideIn {
+    from {
+        transform: translateX(100rem);
 
     }
 
+    to {
+        transform: translateX(0)
     }
+}
 
-.G-05 {
+/*END OF THE NAVBAR   */
+
+
+
+/*start of the legendary g 5 AND THE CHILDREN */
+.mainG5-J{
     position: absolute;
-    left: 45vw;
-    top: 50vh;
-    color: black;
-    width: 10vw;
-    padding: 5vh;
-    background-color: var(--thirdColor);
-    border-radius: 10%;
-    text-align: center;
-    box-shadow: 10px 10px 10px;
+    position: absolute;
+    left: 30%;
+    top: 40%;
     animation: animate cubic-bezier(0.445, 0.05, 0.55, 0.95);
     animation-duration: 3s;
     transition: 1s
 }
+.G-05-J {
+    position: relative;
+    
+    text-align: center;
+    
+}
 
-.G-05>h3 {
-    color: var(--firstcolor);
+.G-05-J>h3 {
+    font-size: 2rem;
+    padding: 3rem;
     animation: animate cubic-bezier(0.445, 0.05, 0.55, 0.95);
-    animation-duration: 6s
+    animation-duration: 3s;
+    letter-spacing: 2px;
+    transition: 2s
 }
 
 /* it is the subnav under G-05 icon */
-.subNav {
-    position: relative;
+.subNav-J {
+    position: absolute;
     list-style-type: none;
-    LEFT: 9VH;
-    top: -2.5vh;
+    LEFT:50%;
+    top: 50%;
     opacity: .7;
     height: 0;
     transition: 1s;
 
 }
 
-.subNav>li {
+.subNav-J>li {
     margin: 1rem;
     position: absolute;
-    /* width: 12vw; */
     width: 0;
     height: 0;
-    /* padding: 50px; */
     background-color: var(--thirdColor);
     text-align: center;
     border-radius: 50%;
@@ -336,14 +225,14 @@ transition: 1s
     transition: 1s
 }
 
-.subNav>li>a {
+.subNav-J>li>a {
     text-decoration: none;
     color: black;
     text-align: center;
     letter-spacing: 2px
 }
 
-.G-05:hover {
+.G-05-J h3:hover {
     cursor: pointer;
     top: 48vh;
     transform: scale(1.02);
@@ -351,7 +240,8 @@ transition: 1s
     background-color: rgba(255, 255, 255, .6)
 }
 
-.G-05:hover .subNav>:first-child {
+/* The positioning of names after hoverin g5 */
+.G-05-J:hover .subNav-J>:first-child {
     width: 12vw;
     transform: translate(11vw, -20vh);
     padding: 50px;
@@ -360,7 +250,7 @@ transition: 1s
     background-color: rgba(255, 255, 255, .6);
 }
 
-.G-05:hover .subNav>:nth-child(2) {
+.G-05-J:hover .subNav-J>:nth-child(2) {
     width: 12vw;
     transform: translate(-20vw, -20vh);
     padding: 50px;
@@ -369,7 +259,7 @@ transition: 1s
     background-color: rgba(255, 255, 255, .6)
 }
 
-.G-05:hover .subNav>:nth-child(3) {
+.G-05-J:hover .subNav-J>:nth-child(3) {
     width: 12vw;
     transform: translate(-20vw, 10vh);
     padding: 50px;
@@ -378,7 +268,7 @@ transition: 1s
     background-color: rgba(255, 255, 255, .6)
 }
 
-.G-05:hover .subNav>:last-child {
+.G-05-J:hover .subNav-J>:last-child {
     width: 12vw;
     transform: translate(11vw, 10vh);
     padding: 50px;
@@ -386,8 +276,9 @@ transition: 1s
     box-shadow: 10px 10px 10px;
     background-color: rgba(255, 255, 255, .6)
 }
+/* END OF THE POSITIONING OF NAMES UNDER G-5 */
 
-
+/* START OF NABAR ANIMATION */
 @keyframes animate {
     0% {
         opacity: 0;
@@ -398,211 +289,14 @@ transition: 1s
 
     100% {
         opacity: 1;
-        left: 45vw;
+        left: 30%;
         transform: rotateY(0deg);
         filter: blur(0)
     }
 
-}
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* END OF NAVBAR ANIMATION */
 
 
 
@@ -655,6 +349,7 @@ transition: 1s
 /* JAY's PART END */
 
 /* JAVIER's PART START */
+
 
 
 
@@ -1155,195 +850,171 @@ transition: 1s
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* STEFAN's PART END */
 
 /* ISAAC's PART START */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ISAAC's PART END */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*styling of the card*/
+.card{
+    width: 360px;
+    height: 360px;
+    background: black;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    margin: 10px ;
+    position:relative;
+    border-radius: 50px;
+    overflow: hidden;
+   
+   
+
+}
+/*style the whole span*/
+.card span{
+    height: 100%;
+    left: 0;
+    position: absolute;
+   /* width: 100%;* initial width of image */
+   transition: 1s;
+   margin: 0px;
+   
+   
+}
+
+/*styling of the images positioning them in their various spans*/
+.container div:nth-child(4) > span{
+    background: url(/img/7m.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 100%;
+}
+
+.container div:nth-child(2)> span{
+    background: url(/img/1m.jpg);
+    background-size: cover;
+
+}
+
+.container div:nth-child(3)> span{
+    background: url(/img/2m.jpg) ;
+    background-size: cover;
+
+}
+
+.container div:nth-child(5)> span{
+    background: url(/img/6m.jpg) ;
+    background-size: cover;
+
+}
+
+/*styling of the spans*/
+.card  span:nth-child(1){
+    z-index: 10;
+    width: 25%;
+    transition-delay: 0;
+    
+    
+}
+.card span:nth-child(2){
+    z-index: 9;
+    width: 50%;
+  
+   
+}
+.card span:nth-child(3){
+    z-index: 8;
+    width: 75%;
+    transition-delay: 0.6s;
+    
+    
+}
+.card span:nth-child(4){
+    z-index: 7;
+    width: 100%;
+    transition-delay: 0.8s;
+    
+    
+}
+  /*style of the card hover and span*/
+ .card:hover span{
+    transform: translateY(-100%);
+    transition: 1s;
+}
+
+.card:hover span:nth-child(1){
+  
+    transition-delay: 0.8s;
+}
+
+.card:hover span:nth-child(2){
+    
+    transition-delay: 0.6s;
+}
+
+.card:hover span:nth-child(3){
+    transition-delay: 0.3s;
+}
+
+.card:hover span:nth-child(4){
+    transition-delay: 0s;
+}
+
+/*style of the main content inside the card*/
+.content{
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    transform: translateY(100%);
+    transition: 2s;
+}
+.content p{
+    color: #999;
+}
+
+/*style of the content link*/
+.content a{
+    width: 100px;
+    text-decoration: none;
+    border-radius: 40px;
+    border: 1px solid #fff;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    color: white;
+
+}
+
+/*style hover content inside the card*/
+.card:hover .content{
+    transform: translateY(0%)
+}
+/*container style*/
+.container {
+    background-color:rgb(250, 245, 245);
+    display: flex;
+    flex-direction: row;
+    padding: 22px;
+    text-align: center;
+
+}
+  /*styling of the contact to show hover*/
+.contact{
+    display: flex;
+color: rgb(15, 12, 12);
+align-items: center;
+text-align: center;
+
+}
+/*styling of the footer*/
+.footer{
+    background-color: black;
+    text-align: center;
+    color: #fff;
+    height: 3vh;
 
 
 
