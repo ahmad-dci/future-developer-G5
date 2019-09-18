@@ -1,37 +1,43 @@
-/*START*/ 
+/*----START----*/
+/*--RULES: ///////////////////////////////////////////////////////////////////////
+        a)  .camelCase  (Example: .sidebarLeft, #navbarTop, .divMobile)
+        b)  .purposeX (Example: .containerJay, #someDivS [Jay= Jay, J=Javier, S=Stefan, I=Isaac])
+        c)  /* REMEMBER TO COMMENT *\
+        d)  check your lines before your pull request:
 
-/* START */
-
+  --LINES CSS:  Jay :   100 - 350     --LINES HTML: Jay     50 - 300
+                Javier: 352 - 602                   Javier  302 - 552
+                Stefan: 604 - 854                   Stefan  554 - 804
+                Isaac:  856 - 1106                  Isaac   806 - 1056
+////////////////////////////////////////////////////////////////////////////////*/
 /*RESET*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #777;
-    font-family: 'Lato', sans-serif;
+    color: var(--thirdColor);
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
 }
 
 /* VARIABLES*/
 :root {
-    --mainColor: rgba(255,255,255,0);
+    --mainColor: rgba(0,0,0,1);
     --secondColor: rgba(255,255,255,1);
-    --thirdColor: rgba(119,119,119,.5);
+    --thirdColor:  rgba(119, 119, 119,1);
   }
 
 /* GRID CONTAINER & AREA*/ 
 .gridContainer {
-    /* display: grid; */
-    
+    display: grid;
     grid-template-areas:
-    'jay jay jay jay jay jay',
-    'javier javie javier javier javier javier',
-    'stefan stefan stefan stefan stefan stefan',
+    'jay jay jay jay jay jay'
+    'javier javier javier javier javier javier'
+    'stefan stefan stefan stefan stefan stefan'
     'isaac isaac isaac isaac isaac isaac';
- 
 }
+/* GRID CONTAINER & AREA END */
 
-
-/* TEST */
+/* RETURN TO TOP BUTTON */
 #returnToTop {
     position: fixed;
     bottom: 20px;
@@ -39,21 +45,21 @@
     z-index: 9999;
     font-size: 3rem;
     border-radius: 50%;
-   /* background-color: var(--secondColor); */
-    text-shadow: 2px 2px 12px rgb(59, 59, 59);
+    text-shadow: 2px 2px 12px rgb(59, 59, 59); 
     transition: color 0.3s ease-in;
- }
- #returnToTop:hover {
+}
+
+#returnToTop:hover {
     color: var(--secondColor);
- }
- 
- #returnToTop:active {
+}
+
+/* Simulated click: moves down, makes shadow darker*/
+#returnToTop:active {
     transform: translateY(2px);
     box-shadow: 1px 1px 12px rgb(29, 29, 29);
- }
+}
 
-
-
+/* RETURN TO TOP BUTTON END*/
 
 
 
@@ -89,44 +95,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* JAY's PART START */
-
-
-
 .header{
     grid-area: jay;
     width: 100%;
@@ -313,182 +282,6 @@ transition: 1s
     }
 
     }
-   
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -807,84 +600,84 @@ transition: 1s
 /* JAVIER's PART END  */
 
 /* STEFAN's PART START */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.stefan {
+    grid-area: stefan;
+    position: relative;
+    width: 100vw;
+    }
+
+
+.containerBarS {
+    position: absolute;
+    width: 100vw;
+    background: rgba(115, 115, 115, 0.6)
+}    
+
+.logoFA {
+    font-size: 3rem;
+    color: var(--thirdColor);
+}
+
+/* Knowledge-Bar */
+#bar {
+    list-style: none;
+}
+
+/* Bar-Top-Part */
+#bar li div.top { background-color:rgba(119, 119, 119, 0.6); position:relative;
+    width:100px; height:40px; /*-moz-border-radius: 100px/40px; -webkit-border-radius: 100px 40px;*/ border-radius: 100px/40px; }
+
+/* logoFAs hidden/unhidden for hover */
+ #bar li div.top i { display:none; }
+ #bar li:hover div.top i { display:inline; }
+
+/* Bar-Bottom-Part */
+ #bar li div.bottom { background-color:rgba(115, 115, 115, 0.6); margin-top:-40px; position:relative;
+    width:100px; -moz-border-radius: 100px/40px; -webkit-border-radius: 100px 40px; border-radius: 100px/40px; }
+
+/* Z-Index Hierarchies & 3D-Color Effect*/
+#javaScript div.top { z-index:99; }
+#javaScript div.bottom { z-index:98; height:120px; }
+#javaScript:hover div.top { z-index:999; background-color:rgba(119, 119, 119, 0.2); }
+#javaScript:hover div.bottom { z-index:998; background-color: rgba(119, 119, 119, 1);
+background:linear-gradient(-90deg, rgba(119, 119, 119, 1), rgba(119, 119, 119, 0.4));/* background:-webkit-gradient(linear, 0 top, 0 bottom, from(#1a6c90), to(#14506b));*/ }
+
+#css div.top { z-index:97; }
+#css div.bottom { z-index:96; height:120px; }
+#css:hover div.top { z-index:997; background-color:rgba(119, 119, 119, 0.2); }
+#css:hover div.bottom { z-index:996; background-color: rgba(119, 119, 119, 1);
+background:linear-gradient(-90deg, rgba(119, 119, 119, 1), rgba(119, 119, 119, 0.4));}
+
+#html div.top { z-index:95; }
+#html div.bottom { z-index:94; height:120px; }
+#html:hover div.top { z-index:995; background-color:rgba(119, 119, 119, 0.2); }
+#html:hover div.bottom { z-index:994; background-color: rgba(119, 119, 119, 1);
+background:linear-gradient(-90deg, rgba(119, 119, 119, 1), rgba(119, 119, 119, 0.4));}
+
+#github div.top { z-index:93; }
+#github div.bottom { z-index:92; height:120px; }
+#github:hover div.top { z-index:993; background-color:rgba(119, 119, 119, 0.2); }
+#github:hover div.bottom { z-index:992; background-color: rgba(119, 119, 119, 1);
+background:linear-gradient(-90deg, rgba(119, 119, 119, 1), rgba(119, 119, 119, 0.4));}
+
+#git div.top { z-index:91; }
+#git div.bottom { z-index:90; height:120px; }
+#git:hover div.top { z-index:991; background-color:rgba(119, 119, 119, 0.2); }
+#git:hover div.bottom { z-index:990; background-color: rgba(119, 119, 119, 1);
+background:linear-gradient(-90deg, rgba(119, 119, 119, 1), rgba(119, 119, 119, 0.4));}
+
+#linux div.top { z-index:89; }
+#linux div.bottom { z-index:88; height:120px; }
+#linux:hover div.top { z-index:989; background-color:rgba(119, 119, 119, 0.2); }
+#linux:hover div.bottom { z-index:988;; background-color: rgba(119, 119, 119, 1);
+background:linear-gradient(-90deg, rgba(119, 119, 119, 1), rgba(119, 119, 119, 0.4));}
+
+.logoDCI{
+    margin-top: -170px;
+    transform: skewX(15deg);
+    z-index: -999
+    
+}
 
 
 
@@ -1058,6 +851,257 @@ transition: 1s
 
 /* STEFAN's PART END */
 
+/* ISAAC's PART START */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ISAAC's PART END */
 
 
@@ -1308,7 +1352,6 @@ transition: 1s
 
 
 
-/* ISAAC's PART END */
 
 
 
@@ -2075,265 +2118,3 @@ transition: 1s
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
