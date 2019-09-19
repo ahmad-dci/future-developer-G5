@@ -41,6 +41,7 @@
         'javier javier javier javier javier javier'
         'stefan stefan stefan stefan stefan stefan'
         'isaac isaac isaac isaac isaac isaac';
+        overflow: hidden
 }
 
 /* GRID CONTAINER & AREA END */
@@ -784,7 +785,7 @@ transform: scaleX(1)
 .stefan {
     grid-area: stefan;
     position: relative;
-    /* width: 100vw; */
+     width: 100vw; 
     height: 90vh;
     /* padding: 5rem; */
     background: radial-gradient(circle, var(--secondColor), var(--thirdColor));
@@ -1164,6 +1165,7 @@ transform: scaleX(1)
     margin: auto;
     padding: 10px;
     color: white;
+    
 
 }
 
@@ -1180,6 +1182,7 @@ transform: scaleX(1)
     flex-direction: row;
     padding: 22px;
     text-align: center;
+    width: 100vw;
 
 }
   /*styling of the contact to show hover*/
