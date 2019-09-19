@@ -1,4 +1,6 @@
 /*----START----*/
+
+
 /*--RULES: ///////////////////////////////////////////////////////////////////////
         a)  .camelCase  (Example: .sidebarLeft, #navbarTop, .divMobile)
         b)  .purposeX (Example: .containerJay, #someDivS [Jay= Jay, J=Javier, S=Stefan, I=Isaac])
@@ -10,6 +12,8 @@
                 Stefan: 604 - 854                   Stefan  554 - 804
                 Isaac:  856 - 1106                  Isaac   806 - 1056
 ////////////////////////////////////////////////////////////////////////////////*/
+
+
 /*RESET*/
 * {
     margin: 0;
@@ -20,7 +24,9 @@
     scroll-behavior: smooth;
 }
 
+
 /* VARIABLES*/
+
 :root {
     --mainColor: rgba(0, 0, 0, 1);
     --secondColor: rgba(255, 255, 255, 1);
@@ -39,7 +45,9 @@
 
 /* GRID CONTAINER & AREA END */
 
+
 /* RETURN TO TOP BUTTON */
+
 #returnToTop {
     position: fixed;
     bottom: 20px;
@@ -56,24 +64,16 @@
     color: var(--secondColor);
 }
 
+
 /* Simulated click: moves down, makes shadow darker*/
+
 #returnToTop:active {
     transform: translateY(2px);
     box-shadow: 1px 1px 12px rgb(29, 29, 29);
 }
 
+
 /* RETURN TO TOP BUTTON END*/
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -224,6 +224,10 @@ video {
     transition: 1s
 }
 
+.subNav>li>a {
+    transition: 1s
+}
+
 .subNav-J>li>a {
     text-decoration: none;
     color: black;
@@ -277,7 +281,7 @@ video {
 }
 /* END OF THE POSITIONING OF NAMES UNDER G-5 */
 
-/* START OF NABAR ANIMATION */
+/* START OF NAVBAR ANIMATION */
 @keyframes animate {
     0% {
         opacity: 0;
@@ -285,7 +289,6 @@ video {
         transform: rotateY(90deg);
         filter: blur(10px)
     }
-
     100% {
         opacity: 1;
         left: 30%;
@@ -343,30 +346,28 @@ video {
 
 
 
-
-
 /* JAY's PART END */
+
 
 /* JAVIER's PART START */
 
+.content {
+    grid-area: javier;
+    position: relative;
+    height: 100vh;
+}
 
+.item1 h1 {
+    left: 42%;
+    position: absolute;
+    display: block;
+    margin-top: 2rem
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.item2 p {
+    /* background-color: var(--thirdColor); */
+    text-align: center;
+}
 
 
 
@@ -599,6 +600,7 @@ video {
 
 /* JAVIER's PART END  */
 
+
 /* STEFAN's PART START */
 
 .stefan {
@@ -608,9 +610,6 @@ video {
     height: 90vh;
     /* padding: 5rem; */
     background: radial-gradient(circle, var(--secondColor), var(--thirdColor));
-}
-.containerHeaderS{
-    
 }
 
 .containerHeaderS div:nth-child(2), .containerHeaderS div:nth-child(3){
@@ -648,7 +647,7 @@ video {
     opacity: 0.04;
     position: absolute;
     height: 60%;
-    bottom: 20%; /*?????????????????????*/
+    bottom: 20%;
 }
 
 
@@ -713,6 +712,8 @@ video {
         width: 800px;
     }
 }
+
+
 
 
 
@@ -1101,7 +1102,5 @@ text-align: center;
 
 
 
-
-
-
+    
 /* ISAAC's PART END */
