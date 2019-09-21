@@ -26,28 +26,27 @@
 
 
 /* VARIABLES*/
-
 :root {
     --mainColor: rgba(0, 0, 0, 1);
     --secondColor: rgba(255, 255, 255, 1);
     --thirdColor: rgba(119, 119, 119, 1);
 }
 
+
 /* GRID CONTAINER & AREA*/
 .gridContainer {
     display: grid;
-    grid-template-areas:
-        'jay jay jay jay jay jay'
-        'javier javier javier javier javier javier'
-        'stefan stefan stefan stefan stefan stefan'
-        'isaac isaac isaac isaac isaac isaac';
+    grid-template-areas: 'jay jay jay jay jay jay' 
+                         'javier javier javier javier javier javier' 
+                         'stefan stefan stefan stefan stefan stefan' 
+                         'isaac isaac isaac isaac isaac isaac';
 }
+
 
 /* GRID CONTAINER & AREA END */
 
 
 /* RETURN TO TOP BUTTON */
-
 #returnToTop {
     position: fixed;
     bottom: 20px;
@@ -55,7 +54,6 @@
     z-index: 9999;
     font-size: 4vw;
     border-radius: 50%;
-    /* background-color: var(--secondColor); */
     text-shadow: 2px 2px 12px rgb(59, 59, 59);
     transition: color 0.3s ease-in;
 }
@@ -71,6 +69,7 @@
     transform: translateY(2px);
     box-shadow: 1px 1px 12px rgb(29, 29, 29);
 }
+
 
 /* RETURN TO TOP BUTTON END*/
 
@@ -96,9 +95,9 @@
 
 
 
+
 /* JAY's PART START */
 .header-J {
-
     position: relative;
     grid-area: jay;
     width: 100vw;
@@ -115,7 +114,6 @@ video {
     width: 100%;
     overflow: hidden;
     height: 100%;
-
 }
 
 /* start of the navbar with all the animation and etc */
@@ -139,7 +137,6 @@ video {
 #nav-J>ul>li>a {
     text-decoration: none;
     font-size: .7rem;
-
     text-transform: uppercase;
     color: var(--thirdColor);
     padding: 1rem;
@@ -158,20 +155,17 @@ video {
     animation-delay: .75s
 }
 
-
 @keyframes slideIn {
     from {
         transform: translateX(100rem);
-
     }
-
     to {
         transform: translateX(0)
     }
 }
 
-/*END OF THE NAVBAR   */
 
+/*END OF THE NAVBAR   */
 
 
 /*start of the legendary g 5 AND THE CHILDREN */
@@ -187,9 +181,7 @@ video {
 
 .G-05-J {
     position: relative;
-
     text-align: center;
-
 }
 
 .G-05-J>h3 {
@@ -201,6 +193,7 @@ video {
     transition: 2s
 }
 
+
 /* it is the subnav under G-05 icon */
 .subNav-J {
     position: absolute;
@@ -210,7 +203,6 @@ video {
     opacity: .7;
     height: 0;
     transition: 1s;
-
 }
 
 .subNav-J>li {
@@ -298,7 +290,6 @@ video {
         transform: rotateY(0deg);
         filter: blur(0)
     }
-
 }
 
 /* END OF NAVBAR ANIMATION */
@@ -336,98 +327,117 @@ video {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* JAY's PART END */
 
-/* JAVIER's PART START */
 
-.content {
+/* JAVIER's PART START */
+.contentJ {
     grid-area: javier;
     position: relative;
-    height: 100vh;
+    padding-bottom: 2%;
 }
 
-.item1 h1 {
-    left: 42%;
-    position: absolute;
-    display: block;
-    margin-top: 2rem
+.gridJ {
+    display: grid;
+    grid-template-areas: "head head " "img1 txt1" "img1 img2" "txt2 txt2";
 }
 
-.item2 p {
-    /* background-color: var(--thirdColor); */
+.headJ {
+    grid-area: head;
     text-align: center;
+    position: relative;
+    display: block;
+    margin-top: 10px;
+    height: 100px;
+    width: 100%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.headJ h1 {
+    float: center;
+    display: block;
+}
+
+.headJ p {
+    float: center;
+    display: block;
+}
+
+.img1J {
+    position: relative;
+    grid-area: img1;
+    width: 89%;
+    margin: 2%;
+}
+
+.img1J:hover {
+    opacity: .3;
+}
+
+.txt1J {
+    text-align: justify;
+    position: relative;
+    display: block;
+    grid-area: txt1;
+    width: 99%;
+    margin: 1%;
+}
+
+.img2J {
+    position: relative;
+    grid-area: img2;
+    width: 100%;
+    border: #999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img1effectJ {
+    width: 600px;
+    height: 333px;
+}
+
+.img2effectJ {
+    width: 600px;
+    height: 333px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s;
+}
+
+.img2J:hover .img2effectJ {
+    transform: scale(0.5);
+    /* background-color: #ff0; */
+}
+
+.txt2J {
+    text-align: justify;
+    position: relative;
+    display: block;
+    grid-area: txt2;
+    width: 99%;
+    margin: 1%;
+}
 
 
 
@@ -590,7 +600,6 @@ video {
 /* JAVIER's PART END  */
 
 /* STEFAN's PART START */
-
 .stefan {
     grid-area: stefan;
     position: relative;
@@ -759,65 +768,9 @@ video {
 
 .skills-S .skillLogo {
     font-size: 5rem;
-    
+
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -901,8 +854,6 @@ video {
 /* STEFAN's PART END */
 
 /* ISAAC's PART START */
-
-
 /*styling of the card*/
 .card {
     width: 360px;
@@ -913,9 +864,6 @@ video {
     position: relative;
     border-radius: 50px;
     overflow: hidden;
-
-
-
 }
 
 /*style the whole span*/
@@ -926,8 +874,6 @@ video {
     /* width: 100%;* initial width of image */
     transition: 1s;
     margin: 0px;
-
-
 }
 
 /*styling of the images positioning them in their various spans*/
@@ -947,15 +893,12 @@ video {
     background: url(/images/6m.jpg);
     background-repeat: no-repeat;
     background-size: 360px 360px;
-
 }
 
 .container div:nth-child(5)>span {
     background-image: url(/images/4m.jpg);
     background-repeat: no-repeat;
     background-size: 360px 360px;
-
-
 }
 
 /*styling of the spans*/
@@ -963,31 +906,23 @@ video {
     z-index: 10;
     width: 25%;
     transition-delay: 0;
-
-
 }
 
 .card span:nth-child(2) {
     z-index: 9;
     width: 50%;
-
-
 }
 
 .card span:nth-child(3) {
     z-index: 8;
     width: 75%;
     transition-delay: 0.6s;
-
-
 }
 
 .card span:nth-child(4) {
     z-index: 7;
     width: 100%;
     transition-delay: 0.8s;
-
-
 }
 
 /*style of the card hover and span*/
@@ -997,12 +932,10 @@ video {
 }
 
 .card:hover span:nth-child(1) {
-
     transition-delay: 0.8s;
 }
 
 .card:hover span:nth-child(2) {
-
     transition-delay: 0.6s;
 }
 
@@ -1030,6 +963,7 @@ video {
     color: #999;
 }
 
+
 /*style of the content link*/
 .content a {
     width: 100px;
@@ -1040,7 +974,6 @@ video {
     margin: auto;
     padding: 10px;
     color: white;
-
 }
 
 /*style hover content inside the card*/
@@ -1057,7 +990,6 @@ video {
     flex-direction: row;
     padding: 22px;
     text-align: center;
-
 }
 
 /*styling of the contact to show hover*/
@@ -1066,7 +998,6 @@ video {
     color: rgb(15, 12, 12);
     align-items: center;
     text-align: center;
-
 }
 
 /*styling of the footer*/
@@ -1076,45 +1007,6 @@ video {
     color: #fff;
     /* height: 3vh; */
     padding: 20px;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
