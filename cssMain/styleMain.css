@@ -26,29 +26,25 @@
 
 
 /* VARIABLES*/
-
 :root {
     --mainColor: rgba(0, 0, 0, 1);
     --secondColor: rgba(255, 255, 255, 1);
     --thirdColor: rgba(119, 119, 119, 1);
 }
 
+
 /* GRID CONTAINER & AREA*/
 .gridContainer {
     display: grid;
-    grid-template-areas:
-        'jay jay jay jay jay jay'
-        'javier javier javier javier javier javier'
-        'stefan stefan stefan stefan stefan stefan'
-        'isaac isaac isaac isaac isaac isaac';
-        overflow: hidden
+    grid-template-areas: 'jay jay jay jay jay jay' 
+                         'javier javier javier javier javier javier' 
+                         'stefan stefan stefan stefan stefan stefan' 
+                         'isaac isaac isaac isaac isaac isaac';
 }
 
 /* GRID CONTAINER & AREA END */
 
-
 /* RETURN TO TOP BUTTON */
-
 #returnToTop {
     position: fixed;
     bottom: 20px;
@@ -56,7 +52,6 @@
     z-index: 9999;
     font-size: 4vw;
     border-radius: 50%;
-    /* background-color: var(--secondColor); */
     text-shadow: 2px 2px 12px rgb(59, 59, 59);
     transition: color 0.3s ease-in;
 }
@@ -67,7 +62,6 @@
 
 
 /* Simulated click: moves down, makes shadow darker*/
-
 #returnToTop:active {
     transform: translateY(2px);
     box-shadow: 1px 1px 12px rgb(29, 29, 29);
@@ -102,15 +96,8 @@
 
 
 
-
-
-
-/* RETURN TO TOP BUTTON END*/
-
-
 /* JAY's PART START */
-.header-J {
-
+.headerJay {
     position: relative;
     grid-area: jay;
      width: 100vw; 
@@ -127,64 +114,58 @@ video {
     width: 100%;
     overflow: hidden;
     height: 100%;
-
 }
 
 /* start of the navbar with all the animation and etc */
-#nav-J {
+#navJay {
     position: relative;
 }
 
-#nav-J>ul {
+#navJay>ul {
     display: flex;
     position: absolute;
     right: 5rem;
 }
 
-#nav-J>ul>li {
+#navJay>ul>li {
     list-style-type: none;
     transform: translate(100rem);
     margin: 2rem 1rem;
     animation: slideIn 1s forwards
 }
 
-#nav-J>ul>li>a {
+#navJay>ul>li>a {
     text-decoration: none;
     font-size: .7rem;
-
     text-transform: uppercase;
     color: var(--thirdColor);
     padding: 1rem;
     letter-spacing: 2px;
 }
 
-
-#nav-J>ul>li:nth-child(2) {
+#navJay>ul>li:nth-child(2) {
     animation-delay: .25s
 }
 
-#nav-J>ul>li:nth-child(3) {
+#navJay>ul>li:nth-child(3) {
     animation-delay: .50s
 }
 
-#nav-J>ul>li:nth-child(4) {
+#navJay>ul>li:nth-child(4) {
     animation-delay: .75s
 }
-
 
 @keyframes slideIn {
     from {
         transform: translateX(100rem);
-
     }
-
     to {
         transform: translateX(0)
     }
 }
 
-#nav-J>ul>li>a::before ,
-#nav-J>ul>li>a::after{
+#navJay>ul>li>a::before ,
+#navJay>ul>li>a::after{
     content: '';
     position: absolute;
     width: 100%;
@@ -195,29 +176,25 @@ video {
 transition: all .5s
 }
 
-#nav-J>ul>li>a::before{
+#navJay>ul>li>a::before{
     top: 0;
     
 }
 
-#nav-J>ul>li>a::after{
+#navJay>ul>li>a::after{
     bottom: 0;
     top: 20px;
     transform-origin: right
 }
-#nav-J>ul>li>a:hover::before ,
-#nav-J>ul>li>a:hover::after{
+#navJay>ul>li>a:hover::before ,
+#navJay>ul>li>a:hover::after{
 transform: scaleX(1)
 }
-
-
 /*END OF THE NAVBAR   */
 
-
-
 /*start of the legendary g 5 AND THE CHILDREN */
-.mainG5-J{
 
+.mainG5Jay{
     position: absolute;
     left: 0;
     right: 0;
@@ -227,14 +204,13 @@ transform: scaleX(1)
     animation-duration: 3s;
     transition: all 1s
 }
-.G-05-J {
+
+.G-05Jay {
     position: relative;
-    
     text-align: center;
-    
 }
 
-.G-05-J>h3 {
+.G-05Jay>h3 {
     font-size: 2rem;
     padding: 3rem;
     animation: animate cubic-bezier(0.445, 0.05, 0.55, 0.95);
@@ -244,7 +220,7 @@ transform: scaleX(1)
 }
 
 /* it is the subnav under G-05 icon */
-.subNav-J {
+.subNavJay {
     position: absolute;
     list-style-type: none;
     transform: translatex(calc(50vw - 50%));
@@ -252,10 +228,9 @@ transform: scaleX(1)
     opacity: .7;
     height: 0;
     transition: .5s;
-
 }
 
-.subNav-J>li {
+.subNavJay>li {
     margin: 1rem;
     position: absolute;
     width: 0;
@@ -264,18 +239,17 @@ transform: scaleX(1)
     text-align: center;
     border-radius: 50%;
     overflow: hidden;
-
     transition: .5s
 }
 
-.subNav-J>li>a {
+.subNavJay>li>a {
     text-decoration: none;
     color:white;
     text-align: center;
     letter-spacing: 2px
 }
 
-.G-05-J h3:hover {
+.G-05Jay h3:hover {
     cursor: pointer;
     top: 48vh;
     transform: scale(1.02);
@@ -285,7 +259,7 @@ transform: scaleX(1)
 }
 
 /* The positioning of names after hoverin g5 */
-.G-05-J:hover .subNav-J>:first-child {
+.G-05Jay:hover .subNavJay>:first-child {
     width: 12vw;
     transform: translate(5vw, -20vh);
     padding: 50px;
@@ -294,8 +268,7 @@ transform: scaleX(1)
     /* background-color: rgba(255, 255, 255, .6); */
 }
 
-.G-05-J:hover .subNav-J>:nth-child(2) {
-    
+.G-05Jay:hover .subNavJay>:nth-child(2) {
     width: 12vw;
     transform: translate(-20vw, -20vh);
     padding: 50px;
@@ -304,7 +277,7 @@ transform: scaleX(1)
     background-color: rgba(255, 255, 255, .6) */
 }
 
-.G-05-J:hover .subNav-J>:nth-child(3) {
+.G-05Jay:hover .subNavJay>:nth-child(3) {
     width: 12vw;
     transform: translate(-20vw, 4vh);
     padding: 50px;
@@ -313,7 +286,7 @@ transform: scaleX(1)
     background-color: rgba(255, 255, 255, .6) */
 }
 
-.G-05-J:hover .subNav-J>:last-child {
+.G-05Jay:hover .subNavJay>:last-child {
     width: 12vw;
     transform: translate(5vw, 4vh);
     padding: 50px;
@@ -321,9 +294,10 @@ transform: scaleX(1)
     /* box-shadow: 10px 10px 10px;
     background-color: rgba(255, 255, 255, .6) */
 }
+
 /* END OF THE POSITIONING OF NAMES UNDER G-5 */
 
-/* START OF NABAR ANIMATION */
+/* START OF NAVBAR ANIMATION */
 @keyframes animate {
     0% {
         opacity: 0;
@@ -331,6 +305,7 @@ transform: scaleX(1)
          
         filter: blur(10px)
     }
+
     100% {
         opacity: 1;
         transform: translate(0,)  rotateY(0deg) ;;
@@ -372,253 +347,97 @@ transform: scaleX(1)
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* JAY's PART END */
 
-
 /* JAVIER's PART START */
-
-.content {
+.contentJ {
     grid-area: javier;
     position: relative;
-    height: 100vh;
+    padding-bottom: 2%;
 }
 
-.item1 h1 {
-    left: 42%;
-    position: absolute;
-    display: block;
-    margin-top: 2rem
+.gridJ {
+    display: grid;
+    grid-template-areas: "head head " "img1 txt1" "img1 img2" "txt2 txt2";
 }
 
-.item2 p {
-    /* background-color: var(--thirdColor); */
+.headJ {
+    grid-area: head;
     text-align: center;
-}
-
-
-
-
-/* Knowledge-Bar */
-
-#bar {
-    list-style: none;
-}
-
-
-/* Bar-Top-Part */
-
-#bar li div.top {
-    background-color: rgba(119, 119, 119, 0.6);
     position: relative;
-    width: 100px;
-    height: 40px;
-    /*-moz-border-radius: 100px/40px; -webkit-border-radius: 100px 40px;*/
-    border-radius: 100px/40px;
+    display: block;
+    margin-top: 10px;
+    height: 100px;
+    width: 100%;
 }
 
-
-/* logoFAs hidden/unhidden for hover */
-
-#bar li div.top i {
-    display: none;
+.headJ h1 {
+    float: center;
+    display: block;
 }
 
-#bar li:hover div.top i {
-    display: inline;
+.headJ p {
+    float: center;
+    display: block;
 }
 
-
-/* Bar-Bottom-Part */
-
-#bar li div.bottom {
-    background-color: rgba(115, 115, 115, 0.6);
-    margin-top: -40px;
+.img1J {
     position: relative;
-    width: 100px;
-    -moz-border-radius: 100px/40px;
-    -webkit-border-radius: 100px 40px;
-    border-radius: 100px/40px;
+    grid-area: img1;
+    width: 89%;
+    margin: 2%;
 }
 
-
-/* Z-Index Hierarchies & 3D-Color Effect*/
-
-#javaScript div.top {
-    z-index: 99;
+.img1J:hover {
+    opacity: .3;
 }
 
-#javaScript div.bottom {
-    z-index: 98;
-    height: 120px;
+.txt1J {
+    text-align: justify;
+    position: relative;
+    display: block;
+    grid-area: txt1;
+    width: 99%;
+    margin: 1%;
 }
 
-#javaScript:hover div.top {
-    z-index: 999;
-    background-color: rgba(119, 119, 119, 0.2);
+.img2J {
+    position: relative;
+    grid-area: img2;
+    width: 100%;
+    border: #999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#javaScript:hover div.bottom {
-    z-index: 998;
-    background-color: rgba(119, 119, 119, 1);
-    background: linear-gradient(-90deg, rgba(119, 119, 119, 1), rgba(119, 119, 119, 0.4));
-    /* background:-webkit-gradient(linear, 0 top, 0 bottom, from(#1a6c90), to(#14506b));*/
+.img1effectJ {
+    width: 600px;
+    height: 333px;
 }
 
-#css div.top {
-    z-index: 97;
+.img2effectJ {
+    width: 600px;
+    height: 333px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s;
 }
 
-#css div.bottom {
-    z-index: 96;
-    height: 120px;
+.img2J:hover .img2effectJ {
+    transform: scale(0.5);
+    /* background-color: #ff0; */
 }
 
-#css:hover div.top {
-    z-index: 997;
-    background-color: rgba(119, 119, 119, 0.2);
+.txt2J {
+    text-align: justify;
+    position: relative;
+    display: block;
+    grid-area: txt2;
+    width: 99%;
+    margin: 1%;
 }
-
-#css:hover div.bottom {
-    z-index: 996;
-    background-color: rgba(119, 119, 119, 1);
-    background: linear-gradient(-90deg, rgba(119, 119, 119, 1), rgba(119, 119, 119, 0.4));
-}
-
-#html div.top {
-    z-index: 95;
-}
-
-#html div.bottom {
-    z-index: 94;
-    height: 120px;
-}
-
-#html:hover div.top {
-    z-index: 995;
-    background-color: rgba(119, 119, 119, 0.2);
-}
-
-#html:hover div.bottom {
-    z-index: 994;
-    background-color: rgba(119, 119, 119, 1);
-    background: linear-gradient(-90deg, rgba(119, 119, 119, 1), rgba(119, 119, 119, 0.4));
-}
-
-#github div.top {
-    z-index: 93;
-}
-
-#github div.bottom {
-    z-index: 92;
-    height: 120px;
-}
-
-#github:hover div.top {
-    z-index: 993;
-    background-color: rgba(119, 119, 119, 0.2);
-}
-
-#github:hover div.bottom {
-    z-index: 992;
-    background-color: rgba(119, 119, 119, 1);
-    background: linear-gradient(-90deg, rgba(119, 119, 119, 1), rgba(119, 119, 119, 0.4));
-}
-
-#git div.top {
-    z-index: 91;
-}
-
-#git div.bottom {
-    z-index: 90;
-    height: 120px;
-}
-
-#git:hover div.top {
-    z-index: 991;
-    background-color: rgba(119, 119, 119, 0.2);
-}
-
-#git:hover div.bottom {
-    z-index: 990;
-    background-color: rgba(119, 119, 119, 1);
-    background: linear-gradient(-90deg, rgba(119, 119, 119, 1), rgba(119, 119, 119, 0.4));
-}
-
-#linux div.top {
-    z-index: 89;
-}
-
-#linux div.bottom {
-    z-index: 88;
-    height: 120px;
-}
-
-#linux:hover div.top {
-    z-index: 989;
-    background-color: rgba(119, 119, 119, 0.2);
-}
-
-#linux:hover div.bottom {
-    z-index: 988;
-    ;
-    background-color: rgba(119, 119, 119, 1);
-    background: linear-gradient(-90deg, rgba(119, 119, 119, 1), rgba(119, 119, 119, 0.4));
-}
-
-.logoDCI {
-    margin-top: -170px;
-    transform: skewX(15deg);
-    z-index: -999
-}
-
-
-/* STEFAN's PART END */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -781,56 +600,58 @@ transform: scaleX(1)
 /* JAVIER's PART END  */
 
 /* STEFAN's PART START */
-
 .stefan {
     grid-area: stefan;
     position: relative;
-     width: 100vw; 
     height: 90vh;
     /* padding: 5rem; */
     background: radial-gradient(circle, var(--secondColor), var(--thirdColor));
 }
 
-.containerHeaderS div:nth-child(2), .containerHeaderS div:nth-child(3){
+#logoDCIS {
+    opacity: 0.04;
+    position: absolute;
+    height: 60%;
+    bottom: 20%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    /* z-index: -1; */
+}
+
+/* HEADLINE + ANIMATION */
+
+.containerTextS {
+    text-align: center;
+}
+
+.headlineS,
+.sublineS {
     font-size: 3rem;
     color: var(--secondColor);
-    overflow: hidden;
+    /* overflow: hidden; */
     white-space: nowrap;
     margin: 2rem 0;
     display: inline-block;
 }
 
 /* .firstPartS */
-.containerHeaderS div:nth-child(1) {
-    animation: showup 7s infinite;
+.headlineS {
+    animation: showupS 7s infinite;
 }
- 
-.containerHeaderS div:nth-child(2) {
+
+.sublineS {
     width: 0px;
-    animation: reveal 7s infinite;
+    animation: revealS 7s infinite;
 }
 
 .sublineS span {
     margin-left: -355px;
-    animation: slidein 7s infinite;
+    animation: slideinS 7s infinite;
     color: var(--secondColor);
 }
 
-.wrapperIconS {
-    display: flex;
-    flex-flow: row;
-    justify-content: space-around;
-    font-size: 8rem;
-}
-#logoDCIS {
-    opacity: 0.04;
-    position: absolute;
-    height: 60%;
-    bottom: 20%;
-}
-
-
-@keyframes showup {
+@keyframes showupS {
     0% {
         opacity: 0;
     }
@@ -848,7 +669,7 @@ transform: scaleX(1)
     }
 }
 
-@keyframes slidein {
+@keyframes slideinS {
     0% {
         margin-left: -800px;
     }
@@ -866,89 +687,89 @@ transform: scaleX(1)
     }
 }
 
-@keyframes reveal {
+@keyframes revealS {
     0% {
         opacity: 0;
         width: 0px;
+        margin-right: 0px;
     }
 
     20% {
-        opacity: 1;
+        opacity: 0;
         width: 0px;
     }
 
     30% {
-        width: 355px;
+        opacity: 0.5;
+        width: 10%;
+        margin-right: 90px;
     }
 
     80% {
         opacity: 1;
-        width: 800px;
+        width: 15%;
+        margin-right: 100px;
     }
 
     100% {
         opacity: 0;
-        width: 800px;
+        width: 20%;
+        margin-right: 110px;
     }
 }
 
+/* END HEADLINE + ANIMATION */
 
 
+/* SKILLSET */
+.skillsetS {
+    display: flex;
+    /* flex-flow: row; */
+    max-width: 95vw;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+    padding: 30px;
+}
+
+.skillsS {
+    background: var(--secondColor);
+    border: 2px solid var(--thirdColor);
+    border-radius: 4px;
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    display: block;
+}
+
+.skillsS h4 {
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin: 0.7rem;
+}
+
+.skillsS p {
+    font-size: 0.9rem;
+    margin: 1rem 0;
+    line-height: 1.5;
+}
+
+.skillsS a {
+    text-decoration: none;
+    margin: 1rem 0;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+.skillsS .skillLogo {
+    font-size: 5rem;
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 
@@ -1032,116 +853,101 @@ transform: scaleX(1)
 /* STEFAN's PART END */
 
 /* ISAAC's PART START */
-
-
 /*styling of the card*/
-.card{
+.card {
     width: 360px;
     height: 360px;
     background: black;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-    margin: 10px ;
-    position:relative;
+    margin: 10px;
+    position: relative;
     border-radius: 50px;
     overflow: hidden;
-   
-   
-
 }
+
 /*style the whole span*/
-.card span{
+.card span {
     height: 100%;
     left: 0;
     position: absolute;
-   /* width: 100%;* initial width of image */
-   transition: 1s;
-   margin: 0px;
-   
-   
+    /* width: 100%;* initial width of image */
+    transition: 1s;
+    margin: 0px;
 }
 
 /*styling of the images positioning them in their various spans*/
-.container div:nth-child(4) > span{
+.container div:nth-child(4)>span {
     background: url(/images/1m.jpg);
     background-repeat: no-repeat;
     background-size: 360px 360px;
 }
 
-.container div:nth-child(2)> span{
+.container div:nth-child(2)>span {
     background: url(/images/2m.jpg);
     background-repeat: no-repeat;
     background-size: 360px 360px;
 }
 
-.container div:nth-child(3)> span{
-    background: url(/images/6m.jpg) ;
+.container div:nth-child(3)>span {
+    background: url(/images/6m.jpg);
     background-repeat: no-repeat;
     background-size: 360px 360px;
-
 }
 
-.container div:nth-child(5)> span{
-    background-image: url(/images/4m.jpg) ;
+.container div:nth-child(5)>span {
+    background-image: url(/images/4m.jpg);
     background-repeat: no-repeat;
     background-size: 360px 360px;
-
-
 }
 
 /*styling of the spans*/
-.card  span:nth-child(1){
+.card span:nth-child(1) {
     z-index: 10;
     width: 25%;
     transition-delay: 0;
-    
-    
 }
-.card span:nth-child(2){
+
+.card span:nth-child(2) {
     z-index: 9;
     width: 50%;
-  
-   
 }
-.card span:nth-child(3){
+
+.card span:nth-child(3) {
     z-index: 8;
     width: 75%;
     transition-delay: 0.6s;
-    
-    
 }
-.card span:nth-child(4){
+
+.card span:nth-child(4) {
     z-index: 7;
     width: 100%;
     transition-delay: 0.8s;
-    
-    
 }
-  /*style of the card hover and span*/
- .card:hover span{
+
+/*style of the card hover and span*/
+.card:hover span {
     transform: translateY(-100%);
     transition: 1s;
 }
 
-.card:hover span:nth-child(1){
-  
+.card:hover span:nth-child(1) {
     transition-delay: 0.8s;
 }
 
-.card:hover span:nth-child(2){
-    
+.card:hover span:nth-child(2) {
     transition-delay: 0.6s;
 }
 
-.card:hover span:nth-child(3){
+.card:hover span:nth-child(3) {
     transition-delay: 0.3s;
 }
 
-.card:hover span:nth-child(4){
+.card:hover span:nth-child(4) {
     transition-delay: 0s;
 }
 
 /*style of the main content inside the card*/
-.content{
+.content {
     color: #fff;
     text-align: center;
     padding: 80px 20px;
@@ -1151,12 +957,14 @@ transform: scaleX(1)
     transform: translateY(100%);
     transition: 2s;
 }
-.content p{
+
+.content p {
     color: #999;
 }
 
+
 /*style of the content link*/
-.content a{
+.content a {
     width: 100px;
     text-decoration: none;
     border-radius: 40px;
@@ -1165,40 +973,39 @@ transform: scaleX(1)
     margin: auto;
     padding: 10px;
     color: white;
-    
-
 }
 
 /*style hover content inside the card*/
-.card:hover .content{
-    transform: translateY(0%)
+.card:hover .content {
+    transform: translateY(0%);
 }
+
 /*container style*/
 .container {
     grid-area: isaac;
     position: relative;
-    background-color:rgb(250, 245, 245);
+    background-color: rgb(250, 245, 245);
     display: flex;
     flex-direction: row;
     padding: 22px;
     text-align: center;
-    width: 100vw;
-
 }
-  /*styling of the contact to show hover*/
-.contact{
+
+/*styling of the contact to show hover*/
+.contact {
     display: flex;
-color: rgb(15, 12, 12);
-align-items: center;
-text-align: center;
-
+    color: rgb(15, 12, 12);
+    align-items: center;
+    text-align: center;
 }
+
 /*styling of the footer*/
-.footer{
-    background-color: black;
+.footer {
+    background-color: var(--thirdColor);
     text-align: center;
     color: #fff;
-    height: 3vh;
+    /* height: 3vh; */
+    padding: 20px;
 
 
 
@@ -1245,43 +1052,4 @@ text-align: center;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ISAAC's PART END */
+    /* ISAAC's PART END */
