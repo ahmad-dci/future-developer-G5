@@ -31,14 +31,14 @@
     --thirdColor: rgba(119, 119, 119, 1);
 }
 
+
 /* GRID CONTAINER & AREA*/
 .gridContainer {
     display: grid;
-    grid-template-areas:
-        'jay jay jay jay jay jay'
-        'javier javier javier javier javier javier'
-        'stefan stefan stefan stefan stefan stefan'
-        'isaac isaac isaac isaac isaac isaac';
+    grid-template-areas: 'jay jay jay jay jay jay' 
+                         'javier javier javier javier javier javier' 
+                         'stefan stefan stefan stefan stefan stefan' 
+                         'isaac isaac isaac isaac isaac isaac';
 }
 
 /* GRID CONTAINER & AREA END */
@@ -96,10 +96,10 @@
 
 
 /* JAY's PART START */
-.header-J {
+.headerJay {
     position: relative;
     grid-area: jay;
-    width: 100vw;
+     width: 100vw; 
     height: 100vh;
     overflow: hidden;
     background: linear-gradient(rgba(73, 70, 70, 0.8), rgba(129, 111, 111, 0.5)), url(/images/G-5.jpg) center no-repeat;
@@ -116,24 +116,24 @@ video {
 }
 
 /* start of the navbar with all the animation and etc */
-#nav-J {
+#navJay {
     position: relative;
 }
 
-#nav-J>ul {
+#navJay>ul {
     display: flex;
     position: absolute;
     right: 5rem;
 }
 
-#nav-J>ul>li {
+#navJay>ul>li {
     list-style-type: none;
     transform: translate(100rem);
     margin: 2rem 1rem;
     animation: slideIn 1s forwards
 }
 
-#nav-J>ul>li>a {
+#navJay>ul>li>a {
     text-decoration: none;
     font-size: .7rem;
     text-transform: uppercase;
@@ -142,15 +142,15 @@ video {
     letter-spacing: 2px;
 }
 
-#nav-J>ul>li:nth-child(2) {
+#navJay>ul>li:nth-child(2) {
     animation-delay: .25s
 }
 
-#nav>ul>li:nth-child(3) {
-    animation-delay: .5s
+#navJay>ul>li:nth-child(3) {
+    animation-delay: .50s
 }
 
-#nav-J>ul>li:nth-child(4) {
+#navJay>ul>li:nth-child(4) {
     animation-delay: .75s
 }
 
@@ -163,113 +163,135 @@ video {
     }
 }
 
-/*END OF THE NAVBAR   */
-
-
-
-/*start of the legendary g 5 AND THE CHILDREN */
-.mainG5-J {
+#navJay>ul>li>a::before ,
+#navJay>ul>li>a::after{
+    content: '';
     position: absolute;
-    position: absolute;
-    left: 30%;
-    top: 40%;
-    animation: animate cubic-bezier(0.445, 0.05, 0.55, 0.95);
-    animation-duration: 3s;
-    transition: 1s
+    width: 100%;
+    height: 2px;
+    background-color:var( --secondColor);
+    left: 0;
+    transform: scaleX(0);
+transition: all .5s
 }
 
-.G-05-J {
+#navJay>ul>li>a::before{
+    top: 0;
+    
+}
+
+#navJay>ul>li>a::after{
+    bottom: 0;
+    top: 20px;
+    transform-origin: right
+}
+#navJay>ul>li>a:hover::before ,
+#navJay>ul>li>a:hover::after{
+transform: scaleX(1)
+}
+/*END OF THE NAVBAR   */
+
+/*start of the legendary g 5 AND THE CHILDREN */
+
+.mainG5Jay{
+    position: absolute;
+    left: 0;
+    right: 0;
+    transform: translatey(calc(50vh - 50%));
+    margin: auto;
+    animation: animate cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    animation-duration: 3s;
+    transition: all 1s
+}
+
+.G-05Jay {
     position: relative;
     text-align: center;
 }
 
-.G-05-J>h3 {
+.G-05Jay>h3 {
     font-size: 2rem;
     padding: 3rem;
     animation: animate cubic-bezier(0.445, 0.05, 0.55, 0.95);
     animation-duration: 3s;
     letter-spacing: 2px;
-    transition: 2s
+    transition: .5s
 }
 
 /* it is the subnav under G-05 icon */
-.subNav-J {
+.subNavJay {
     position: absolute;
     list-style-type: none;
-    LEFT: 50%;
+    transform: translatex(calc(50vw - 50%));
     top: 50%;
     opacity: .7;
     height: 0;
-    transition: 1s;
-
+    transition: .5s;
 }
 
-.subNav-J>li {
+.subNavJay>li {
     margin: 1rem;
     position: absolute;
     width: 0;
     height: 0;
-    background-color: var(--thirdColor);
+    /* background-color: var(--thirdColor); */
     text-align: center;
     border-radius: 50%;
     overflow: hidden;
-    transition: 1s
+    transition: .5s
 }
 
-.subNav-J>li>a {
-    transition: 1s
-}
-
-.subNav-J>li>a {
+.subNavJay>li>a {
     text-decoration: none;
-    color: black;
+    color:white;
     text-align: center;
     letter-spacing: 2px
 }
 
-.G-05-J h3:hover {
+.G-05Jay h3:hover {
     cursor: pointer;
     top: 48vh;
     transform: scale(1.02);
+    text-shadow: 10px 10px 10px black;
     border-radius: 50%;
-    background-color: rgba(255, 255, 255, .6)
+    /* background-color: rgba(255, 255, 255, .6) */
 }
 
 /* The positioning of names after hoverin g5 */
-.G-05-J:hover .subNav-J>:first-child {
+.G-05Jay:hover .subNavJay>:first-child {
     width: 12vw;
-    transform: translate(11vw, -20vh);
+    transform: translate(5vw, -20vh);
     padding: 50px;
-    height: auto;
-    box-shadow: 10px 10px 10px;
-    background-color: rgba(255, 255, 255, .6);
+    height: 12vh;
+    /* box-shadow: 10px 10px 10px; */
+    /* background-color: rgba(255, 255, 255, .6); */
 }
 
-.G-05-J:hover .subNav-J>:nth-child(2) {
+.G-05Jay:hover .subNavJay>:nth-child(2) {
     width: 12vw;
     transform: translate(-20vw, -20vh);
     padding: 50px;
-    height: auto;
-    box-shadow: 10px 10px 10px;
-    background-color: rgba(255, 255, 255, .6)
+    height: 12vh;
+    /* box-shadow: 10px 10px 10px;
+    background-color: rgba(255, 255, 255, .6) */
 }
 
-.G-05-J:hover .subNav-J>:nth-child(3) {
+.G-05Jay:hover .subNavJay>:nth-child(3) {
     width: 12vw;
-    transform: translate(-20vw, 10vh);
+    transform: translate(-20vw, 4vh);
     padding: 50px;
-    height: auto;
-    box-shadow: 10px 10px 10px;
-    background-color: rgba(255, 255, 255, .6)
+    height: 12vh;
+    /* box-shadow: 10px 10px 10px;
+    background-color: rgba(255, 255, 255, .6) */
 }
 
-.G-05-J:hover .subNav-J>:last-child {
+.G-05Jay:hover .subNavJay>:last-child {
     width: 12vw;
-    transform: translate(11vw, 10vh);
+    transform: translate(5vw, 4vh);
     padding: 50px;
-    height: auto;
-    box-shadow: 10px 10px 10px;
-    background-color: rgba(255, 255, 255, .6)
+    height: 12vh;
+    /* box-shadow: 10px 10px 10px;
+    background-color: rgba(255, 255, 255, .6) */
 }
 
 /* END OF THE POSITIONING OF NAMES UNDER G-5 */
@@ -278,43 +300,22 @@ video {
 @keyframes animate {
     0% {
         opacity: 0;
-        left: 5vw;
-        transform: rotateY(90deg);
+        transform: translate(-30rem,20vh) rotateY(90deg) ;
+         
         filter: blur(10px)
     }
 
     100% {
         opacity: 1;
-        left: 30%;
-        transform: rotateY(0deg);
-        filter: blur(0)
+        transform: translate(0,)  rotateY(0deg) ;;
+       
+        filter: blur(0);`
+        
     }
 
-}
+    }
 
 /* END OF NAVBAR ANIMATION */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -348,95 +349,94 @@ video {
 /* JAY's PART END */
 
 /* JAVIER's PART START */
-
-.content {
+.contentJ {
     grid-area: javier;
     position: relative;
-    height: 100vh;
+    padding-bottom: 2%;
 }
 
-.item1 h1 {
-    left: 42%;
-    position: absolute;
-    display: block;
-    margin-top: 2rem
+.gridJ {
+    display: grid;
+    grid-template-areas: "head head " "img1 txt1" "img1 img2" "txt2 txt2";
 }
 
-.item2 p {
-    /* background-color: var(--thirdColor); */
+.headJ {
+    grid-area: head;
     text-align: center;
+    position: relative;
+    display: block;
+    margin-top: 10px;
+    height: 100px;
+    width: 100%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.headJ h1 {
+    float: center;
+    display: block;
+}
+
+.headJ p {
+    float: center;
+    display: block;
+}
+
+.img1J {
+    position: relative;
+    grid-area: img1;
+    width: 89%;
+    margin: 2%;
+}
+
+.img1J:hover {
+    opacity: .3;
+}
+
+.txt1J {
+    text-align: justify;
+    position: relative;
+    display: block;
+    grid-area: txt1;
+    width: 99%;
+    margin: 1%;
+}
+
+.img2J {
+    position: relative;
+    grid-area: img2;
+    width: 100%;
+    border: #999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img1effectJ {
+    width: 600px;
+    height: 333px;
+}
+
+.img2effectJ {
+    width: 600px;
+    height: 333px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s;
+}
+
+.img2J:hover .img2effectJ {
+    transform: scale(0.5);
+    /* background-color: #ff0; */
+}
+
+.txt2J {
+    text-align: justify;
+    position: relative;
+    display: block;
+    grid-area: txt2;
+    width: 99%;
+    margin: 1%;
+}
 
 
 
@@ -602,13 +602,12 @@ video {
 .stefan {
     grid-area: stefan;
     position: relative;
-    /* width: 100vw; */
     height: 90vh;
     /* padding: 5rem; */
     background: radial-gradient(circle, var(--secondColor), var(--thirdColor));
 }
 
-#logoDCI-S {
+#logoDCIS {
     opacity: 0.04;
     position: absolute;
     height: 60%;
@@ -621,12 +620,12 @@ video {
 
 /* HEADLINE + ANIMATION */
 
-.containerText-S {
+.containerTextS {
     text-align: center;
 }
 
-.headline-S,
-.subline-S {
+.headlineS,
+.sublineS {
     font-size: 3rem;
     color: var(--secondColor);
     /* overflow: hidden; */
@@ -636,22 +635,22 @@ video {
 }
 
 /* .firstPartS */
-.headline-S {
-    animation: showup-S 7s infinite;
+.headlineS {
+    animation: showupS 7s infinite;
 }
 
-.subline-S {
+.sublineS {
     width: 0px;
-    animation: reveal-S 7s infinite;
+    animation: revealS 7s infinite;
 }
 
-.subline-S span {
+.sublineS span {
     margin-left: -355px;
-    animation: slidein-S 7s infinite;
+    animation: slideinS 7s infinite;
     color: var(--secondColor);
 }
 
-@keyframes showup-S {
+@keyframes showupS {
     0% {
         opacity: 0;
     }
@@ -669,7 +668,7 @@ video {
     }
 }
 
-@keyframes slidein-S {
+@keyframes slideinS {
     0% {
         margin-left: -800px;
     }
@@ -687,7 +686,7 @@ video {
     }
 }
 
-@keyframes reveal-S {
+@keyframes revealS {
     0% {
         opacity: 0;
         width: 0px;
@@ -722,7 +721,7 @@ video {
 
 
 /* SKILLSET */
-.skillset-S {
+.skillsetS {
     display: flex;
     /* flex-flow: row; */
     max-width: 95vw;
@@ -732,7 +731,7 @@ video {
     padding: 30px;
 }
 
-.skills-S {
+.skillsS {
     background: var(--secondColor);
     border: 2px solid var(--thirdColor);
     border-radius: 4px;
@@ -744,19 +743,19 @@ video {
     display: block;
 }
 
-.skills-S h4 {
+.skillsS h4 {
     font-weight: 600;
     font-size: 1.3rem;
     margin: 0.7rem;
 }
 
-.skills-S p {
+.skillsS p {
     font-size: 0.9rem;
     margin: 1rem 0;
     line-height: 1.5;
 }
 
-.skills-S a {
+.skillsS a {
     text-decoration: none;
     margin: 1rem 0;
     font-weight: 600;
@@ -765,7 +764,7 @@ video {
     letter-spacing: 1px;
 }
 
-.skills-S .skillLogo {
+.skillsS .skillLogo {
     font-size: 5rem;
 
 
@@ -962,6 +961,7 @@ video {
     color: #999;
 }
 
+
 /*style of the content link*/
 .content a {
     width: 100px;
@@ -988,7 +988,6 @@ video {
     flex-direction: row;
     padding: 22px;
     text-align: center;
-
 }
 
 /*styling of the contact to show hover*/
@@ -997,7 +996,6 @@ video {
     color: rgb(15, 12, 12);
     align-items: center;
     text-align: center;
-
 }
 
 /*styling of the footer*/
@@ -1053,43 +1051,4 @@ video {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /* ISAAC's PART END */
+ /* ISAAC's PART END */
