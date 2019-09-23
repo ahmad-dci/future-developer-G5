@@ -839,13 +839,31 @@ video {
 
 /* ISAAC's PART START */
 
+.checkinfos{
+    text-align: center;
+    color: #000;
+}
+
+/*container style*/
+.container {
+    grid-area: isaac;
+    position: relative;
+    background-color:var(--secondColor);
+    display: flex;
+    flex-direction: row;
+    padding: 22px;
+    text-align: center;
+    background-image: url(/images/bacm.jpg);
+
+}
+
 
 /*styling of the card*/
-.card{
+.card-m{
     width: 360px;
     height: 360px;
-    background: black;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    background:var(--mainColor);
+    box-shadow: 0 5px 10px rgba(149, 158, 139, 0.5);
     margin: 10px ;
     position:relative;
     border-radius: 50px;
@@ -855,7 +873,7 @@ video {
 
 }
 /*style the whole span*/
-.card span{
+.card-m span{
     height: 100%;
     left: 0;
     position: absolute;
@@ -867,27 +885,29 @@ video {
 }
 
 /*styling of the images positioning them in their various spans*/
-.container div:nth-child(4) > span{
-    background: url(/images/1m.jpg);
+.container div:nth-child(1) > span{
+    background-image: url(/images/maj2.jpg);
     background-repeat: no-repeat;
     background-size: 360px 360px;
+
 }
 
 .container div:nth-child(2)> span{
-    background: url(/images/2m.jpg);
+    background-image: url(/images/jay2.jpg);
     background-repeat: no-repeat;
     background-size: 360px 360px;
+   
 }
 
 .container div:nth-child(3)> span{
-    background: url(/images/6m.jpg) ;
+    background-image: url(/images/stef.jpg) ;
     background-repeat: no-repeat;
     background-size: 360px 360px;
 
 }
 
-.container div:nth-child(5)> span{
-    background-image: url(/images/4m.jpg) ;
+.container div:nth-child(4)> span{
+    background-image: url(/images/jav.jpg) ;
     background-repeat: no-repeat;
     background-size: 360px 360px;
 
@@ -895,27 +915,28 @@ video {
 }
 
 /*styling of the spans*/
-.card  span:nth-child(1){
+.card-m  span:nth-child(1){
     z-index: 10;
     width: 25%;
     transition-delay: 0;
     
     
 }
-.card span:nth-child(2){
+.card-m span:nth-child(2){
     z-index: 9;
     width: 50%;
+    transition-delay: 0.3s;
   
    
 }
-.card span:nth-child(3){
+.card-m span:nth-child(3){
     z-index: 8;
     width: 75%;
     transition-delay: 0.6s;
     
     
 }
-.card span:nth-child(4){
+.card-m span:nth-child(4){
     z-index: 7;
     width: 100%;
     transition-delay: 0.8s;
@@ -923,32 +944,32 @@ video {
     
 }
   /*style of the card hover and span*/
- .card:hover span{
+ .card-m:hover span{
     transform: translateY(-100%);
     transition: 1s;
 }
 
-.card:hover span:nth-child(1){
+.card-m:hover span:nth-child(1){
   
     transition-delay: 0.8s;
 }
 
-.card:hover span:nth-child(2){
+.card-m:hover span:nth-child(2){
     
     transition-delay: 0.6s;
 }
 
-.card:hover span:nth-child(3){
+.card-m:hover span:nth-child(3){
     transition-delay: 0.3s;
 }
 
-.card:hover span:nth-child(4){
+.card-m:hover span:nth-child(4){
     transition-delay: 0s;
 }
 
 /*style of the main content inside the card*/
-.content{
-    color: #fff;
+.content-m{
+    color: rgb(243, 231, 231);
     text-align: center;
     padding: 80px 20px;
     width: 100%;
@@ -957,66 +978,67 @@ video {
     transform: translateY(100%);
     transition: 2s;
 }
-.content p{
-    color: #999;
+.content-m p{
+    color: rgb(230, 233, 229);
 }
 
 /*style of the content link*/
-.content a{
+.content-m a{
     width: 100px;
     text-decoration: none;
-    border-radius: 40px;
-    border: 1px solid #fff;
+    border-radius: 20px;
+    border: 5px solid rgb(255, 255, 255);
     display: block;
-    margin: auto;
+    margin: 1px auto;
     padding: 10px;
-    color: white;
+    color: rgb(255, 255, 255);
 
 }
 
 /*style hover content inside the card*/
-.card:hover .content{
+.card-m:hover .content-m{
     transform: translateY(0%)
 }
-/*container style*/
-.container {
-    grid-area: isaac;
-    position: relative;
-    background-color:rgb(250, 245, 245);
-    display: flex;
-    flex-direction: row;
-    padding: 22px;
+
+  
+ 
+
+
+/*styling  footer*/
+.footer-m{
+    background-color: var(--thirdColor);
     text-align: center;
+    color: rgb(253, 246, 246);
+   padding: 20px;
 
 }
-  /*styling of the contact to show hover*/
-.contact{
-    display: flex;
-color: rgb(15, 12, 12);
-align-items: center;
-text-align: center;
 
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 766px){
+    .container {
+        grid-area: isaac;
+        position: relative;
+        background-color:var(--secondColor);
+        display: flex;
+        flex-direction: column;
+        padding: 33px;
+        text-align: center;
+         margin: auto; 
+    
+    }
 }
-/*styling of the footer*/
-.footer{
-    background-color: black;
-    text-align: center;
-    color: #fff;
-    height: 3vh;
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+    
 
 
 
