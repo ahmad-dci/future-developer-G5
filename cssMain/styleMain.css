@@ -1,6 +1,5 @@
 /*----START----*/
 
-
 /*--RULES: ///////////////////////////////////////////////////////////////////////
         a)  .camelCase  (Example: .sidebarLeft, #navbarTop, .divMobile)
         b)  .purposeX (Example: .containerJay, #someDivS [Jay= Jay, J=Javier, S=Stefan, I=Isaac])
@@ -30,22 +29,21 @@
     --mainColor: rgba(0, 0, 0, 1);
     --secondColor: rgba(255, 255, 255, 1);
     --thirdColor: rgba(119, 119, 119, 1);
+    --textShadow: 1px 1px 5px black;
 }
 
 
 /* GRID CONTAINER & AREA*/
 .gridContainer {
     display: grid;
-    grid-template-areas: 'jay jay jay jay jay jay' 
-                         'javier javier javier javier javier javier' 
-                         'stefan stefan stefan stefan stefan stefan' 
-                         'isaac isaac isaac isaac isaac isaac'
-                        'footer footer footer footer footer footer'
-                        ;
-                         
+    grid-template-areas: 'jay jay jay jay jay jay'
+        'javier javier javier javier javier javier'
+        'stefan stefan stefan stefan stefan stefan'
+        'isaac isaac isaac isaac isaac isaac';
 }
 
 /* GRID CONTAINER & AREA END */
+
 
 /* RETURN TO TOP BUTTON */
 #returnToTop {
@@ -103,7 +101,7 @@
 .headerJay {
     position: relative;
     grid-area: jay;
-     width: 100vw; 
+    /* width: 100vw; */
     height: 100vh;
     overflow: hidden;
     background: linear-gradient(rgba(73, 70, 70, 0.8), rgba(129, 111, 111, 0.5)), url(/images/G-5.jpg) center no-repeat;
@@ -162,42 +160,45 @@ video {
     from {
         transform: translateX(100rem);
     }
+
     to {
         transform: translateX(0)
     }
 }
 
-#navJay>ul>li>a::before ,
-#navJay>ul>li>a::after{
+#navJay>ul>li>a::before,
+#navJay>ul>li>a::after {
     content: '';
     position: absolute;
     width: 100%;
     height: 2px;
-    background-color:var( --secondColor);
+    background-color: var(--secondColor);
     left: 0;
     transform: scaleX(0);
-transition: all .5s
+    transition: all .5s
 }
 
-#navJay>ul>li>a::before{
+#navJay>ul>li>a::before {
     top: 0;
-    
+
 }
 
-#navJay>ul>li>a::after{
+#navJay>ul>li>a::after {
     bottom: 0;
     top: 20px;
     transform-origin: right
 }
-#navJay>ul>li>a:hover::before ,
-#navJay>ul>li>a:hover::after{
-transform: scaleX(1)
+
+#navJay>ul>li>a:hover::before,
+#navJay>ul>li>a:hover::after {
+    transform: scaleX(1)
 }
+
 /*END OF THE NAVBAR   */
 
 /*start of the legendary g 5 AND THE CHILDREN */
 
-.mainG5Jay{
+.mainG5Jay {
     position: absolute;
     left: 0;
     right: 0;
@@ -247,7 +248,7 @@ transform: scaleX(1)
 
 .subNavJay>li>a {
     text-decoration: none;
-    color:white;
+    color: white;
     text-align: center;
     letter-spacing: 2px
 }
@@ -304,20 +305,21 @@ transform: scaleX(1)
 @keyframes animate {
     0% {
         opacity: 0;
-        transform: translate(-30rem,20vh) rotateY(90deg) ;
-         
+        transform: translate(-30rem, 20vh) rotateY(90deg);
+
         filter: blur(10px)
     }
 
     100% {
         opacity: 1;
-        transform: translate(0,)  rotateY(0deg) ;;
-       
+        transform: translate(0, ) rotateY(0deg);
+        ;
+
         filter: blur(0);
-        
-    }
 
     }
+
+}
 
 /* END OF NAVBAR ANIMATION */
 
@@ -352,263 +354,83 @@ transform: scaleX(1)
 
 /* JAY's PART END */
 
-/* JAVIER's PART START */
-.contentJ {
+/* Javier's PART START */
+
+/* BACKGROUND-COLOR */
+.background3of4 {
+    background: radial-gradient(circle, var(--secondColor), var(--thirdColor));
+}
+
+.Javier {
     grid-area: javier;
-    position: relative;
-    padding-bottom: 2%;
-}
-
-.gridJ {
-    display: grid;
-    grid-template-areas: "head head " "img1 txt1" "img1 img2" "txt2 txt2";
-}
-
-.headJ {
-    grid-area: head;
     text-align: center;
-    position: relative;
-    display: block;
-    margin-top: 10px;
-    height: 100px;
-    width: 100%;
+    font-size: 1rem;
+    /* background: radial-gradient(circle, var(--secondColor), var(--thirdColor)); */
 }
 
-.headJ h1 {
-    float: center;
-    display: block;
+
+
+.headlineJ {
+    padding: 2rem;
+    font-size: 3rem;
 }
 
-.headJ p {
-    float: center;
-    display: block;
+.headlineJ p {
+    color: var(--secondColor);
+    text-shadow: var(--textShadow);
 }
 
-.img1J {
-    position: relative;
-    grid-area: img1;
-    width: 89%;
-    margin: 2%;
-}
-
-.img1J:hover {
-    opacity: .3;
-}
-
-.txt1J {
-    text-align: justify;
-    position: relative;
-    display: block;
-    grid-area: txt1;
-    width: 99%;
-    margin: 1%;
-}
-
-.img2J {
-    position: relative;
-    grid-area: img2;
-    width: 100%;
-    border: #999;
+.mainJ {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row wrap;
+    justify-content: space-around;
+    margin-bottom: 4rem;
 }
 
-.img1effectJ {
-    width: 600px;
-    height: 333px;
+.imageLeftJ img {
+    margin: 0 2rem;
+    border-radius: 4px;
+    max-width: 40vw;
+    box-shadow: 2px 2px 12px var(--mainColor);
+    transition: all 0.2s ease-in;
 }
 
-.img2effectJ {
-    width: 600px;
-    height: 333px;
+.imageLeftJ img:hover {
+    transform: scale(1.02);
+    box-shadow: 4px 4px 17px var(--mainColor);
+}
+
+.textRightJ {
+    background-color: var(--secondColor);
+    border: 2px solid var(--thirdColor);
     display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 1s;
+    flex-direction: column;
+    max-width: 45vw;
+    min-width: 400px;
+    line-height: 1.4;
+    margin: 0 2rem;
+    padding: 2rem;
+    box-shadow: 2px 2px 12px var(--mainColor);
+    transition: all 0.2s ease-in;
 }
 
-.img2J:hover .img2effectJ {
-    transform: scale(0.5);
-    /* background-color: #ff0; */
+.textRightJ:hover {
+    transform: scale(1.02);
+    box-shadow: 4px 4px 17px var(--mainColor);
 }
 
-.txt2J {
+.textRightJ p,
+h3 {
+    color: var(--thirdColor);
     text-align: justify;
-    position: relative;
-    display: block;
-    grid-area: txt2;
-    width: 99%;
-    margin: 1%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* JAVIER's PART END  */
 
 /* STEFAN's PART START */
 .stefan {
     grid-area: stefan;
     position: relative;
-    height: 90vh;
-    /* padding: 5rem; */
-    background: radial-gradient(circle, var(--secondColor), var(--thirdColor));
+    /* background: radial-gradient(circle, var(--secondColor), var(--thirdColor)); */
+    max-width: 100vw;
 }
 
 #logoDCIS {
@@ -619,39 +441,31 @@ transform: scaleX(1)
     left: 0;
     right: 0;
     margin: 0 auto;
-    /* z-index: -1; */
+    max-width: 80vw;
 }
 
-/* HEADLINE + ANIMATION */
-
+/* START HEADLINE + ANIMATION */
 .containerTextS {
+    margin: 0 auto;
     text-align: center;
 }
 
-.headlineS,
-.sublineS {
+.containerTextS>div,
+span {
+    text-shadow: var(--textShadow);
     font-size: 3rem;
     color: var(--secondColor);
-    /* overflow: hidden; */
-    white-space: nowrap;
-    margin: 2rem 0;
+    margin: 1rem 0;
+    /* flex-wrap: nowrap; */
     display: inline-block;
 }
 
-/* .firstPartS */
 .headlineS {
     animation: showupS 7s infinite;
 }
 
 .sublineS {
-    width: 0px;
     animation: revealS 7s infinite;
-}
-
-.sublineS span {
-    margin-left: -355px;
-    animation: slideinS 7s infinite;
-    color: var(--secondColor);
 }
 
 @keyframes showupS {
@@ -672,67 +486,38 @@ transform: scaleX(1)
     }
 }
 
-@keyframes slideinS {
-    0% {
-        margin-left: -800px;
-    }
-
-    20% {
-        margin-left: -800px;
-    }
-
-    35% {
-        margin-left: 0px;
-    }
-
-    100% {
-        margin-left: 0px;
-    }
-}
 
 @keyframes revealS {
     0% {
         opacity: 0;
-        width: 0px;
-        margin-right: 0px;
     }
 
     20% {
         opacity: 0;
-        width: 0px;
-    }
-
-    30% {
-        opacity: 0.5;
-        width: 10%;
-        margin-right: 90px;
     }
 
     80% {
         opacity: 1;
-        width: 15%;
-        margin-right: 100px;
+
     }
 
     100% {
         opacity: 0;
-        width: 20%;
-        margin-right: 110px;
+
     }
 }
 
 /* END HEADLINE + ANIMATION */
 
 
-/* SKILLSET */
+/* START SKILLSET */
 .skillsetS {
+    position: relative;
     display: flex;
-    /* flex-flow: row; */
-    max-width: 95vw;
-    justify-content: space-between;
+    flex-flow: row wrap;
     margin: 0 auto;
-    align-items: center;
-    padding: 30px;
+    max-width: 80vw;
+    justify-content: space-evenly;
 }
 
 .skillsS {
@@ -740,11 +525,21 @@ transform: scaleX(1)
     border: 2px solid var(--thirdColor);
     border-radius: 4px;
     margin: 1rem;
-    padding: 1rem;
-    display: flex;
-    flex-wrap: wrap;
+    padding: 1.5rem;
+    width: 24vw;
     text-align: center;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+}
+
+.skillsS:hover {
+    box-shadow: 12px 12px 22px rgb(59, 59, 59);
+    /* transform: scale(1.01) */
+}
+
+.skillsS .skillLogo {
+    font-size: 5rem;
 }
 
 .skillsS h4 {
@@ -761,18 +556,20 @@ transform: scaleX(1)
 
 .skillsS a {
     text-decoration: none;
+}
+
+.skillsS a:nth-last-of-type(1) {
     margin: 1rem 0;
     font-weight: 600;
     text-transform: uppercase;
     font-size: 0.8rem;
     letter-spacing: 1px;
+    transition: all 0.3s ease;
 }
 
-.skillsS .skillLogo {
-    font-size: 5rem;
+/* END SKILLSET */
 
 
-}
 
 
 
@@ -984,8 +781,8 @@ transform: scaleX(1)
     color: rgb(243, 231, 231);
     text-align: center;
     padding: 80px 20px;
-    width: 100%;
-    height: 100%;
+    /* width: 100%; */
+    /* height: 100%; */
     box-sizing: border-box;
     transform: translateY(100%);
     transition: 2s;
@@ -1010,14 +807,14 @@ transform: scaleX(1)
 .card-m:hover .content-m{
     transform: translateY(0%)
 }
-/*styling  footer*/
-/* .footer-m{ */
-    /* background-color: var(--thirdColor);
+styling  footer
+ .footer-m{ 
+     background-color: var(--thirdColor);
     text-align: center;
     color: rgb(253, 246, 246);
    padding: 20px;
 
-} */
+} 
 @media (max-width: 766px){
     .container {
         grid-area: isaac;
