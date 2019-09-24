@@ -654,174 +654,95 @@ span {
 
 /* ISAAC's PART START */
 
-.checkinfos{
-    text-align: center;
-    color: #000;
-    font-size: 20px;
-}
-
-/*container style*/
-.container {
-    grid-area: isaac;
-    position: relative;
-    /* background-color:var(--secondColor); */
-    display: flex;
-    flex-direction: row;
-    padding: 22px;
-    text-align: center;
-    /* background-image: url(/images/bacm.jpg); */
-
-}
 
 
-/*styling of the card*/
-.card-m{
-    width: 300px;
-    height: 360px;
-    background:var(--mainColor);
-    box-shadow: 0 5px 10px rgba(149, 158, 139, 0.5);
-    margin: 10px ;
-    position:relative;
-    border-radius: 50px;
-    overflow: hidden;
-   
-   
-
-}
-/*style the whole span*/
-.card-m span{
-    height: 100%;
-    left: 0;
-    position: absolute;
-   /* width: 100%;* initial width of image */
-   transition: 1s;
-   margin: 0px;
-   
-   
-}
-
-/*styling of the images positioning them in their various spans*/
-.container div:nth-child(1) > span{
-    background-image: url(/images/maj.jpg);
-    background-repeat: no-repeat;
-    background-size: 300px 360px;
-
-}
-
-.container div:nth-child(2)> span{
-    background-image: url(/images/jay2.jpg);
-    background-repeat: no-repeat;
-    background-size: 300px 360px;
-   
-}
-
-.container div:nth-child(3)> span{
-    background-image: url(/images/stef.jpg) ;
-    background-repeat: no-repeat;
-    background-size: 300px 360px;
-
-}
-
-.container div:nth-child(4)> span{
-    background-image: url(/images/jav.jpg) ;
-    background-repeat: no-repeat;
-    background-size: 300px 360px;
-}
 
 
-/*styling of the spans*/
-.card-m  span:nth-child(1){
-    z-index: 10;
-    width: 25%;
-    transition-delay: 0;  
-}
-.card-m span:nth-child(2){
-    z-index: 9;
-    width: 50%;
-    transition-delay: 0.3s;
-  
-   
-}
-.card-m span:nth-child(3){
-    z-index: 8;
-    width: 75%;
-    transition-delay: 0.6s;
-    
-    
-}
-.card-m span:nth-child(4){
-    z-index: 7;
-    width: 100%;
-    transition-delay: 0.8s;  
-}
-  /*style of the card hover and span*/
- .card-m:hover span{
-    transform: translateY(-100%);
-    transition: 1s;
-}
-.card-m:hover span:nth-child(1){
-  
-    transition-delay: 0.8s;
-}
 
-.card-m:hover span:nth-child(2){
-    
-    transition-delay: 0.6s;
-}
 
-.card-m:hover span:nth-child(3){
-    transition-delay: 0.3s;
-}
 
-.card-m:hover span:nth-child(4){
-    transition-delay: 0s;
-}
 
-/*style of the main content inside the card*/
-.content-m{
-    color: rgb(243, 231, 231);
-    text-align: center;
-    padding: 80px 20px;
-    /* width: 100%; */
-    /* height: 100%; */
-    box-sizing: border-box;
-    transform: translateY(100%);
-    transition: 2s;
-}
-.content-m p{
-    color: rgb(230, 233, 229);
-}
-/*style of the content link*/
-.content-m a{
-    width: 100px;
-    text-decoration: none;
-    border-radius: 20px;
-    border: 5px solid rgb(255, 255, 255);
-    display: block;
-    margin: 1px auto;
-    padding: 10px;
-    color: rgb(255, 255, 255);
 
-}
 
-/*style hover content inside the card*/
-.card-m:hover .content-m{
-    transform: translateY(0%)
-}
-/*styling  footer*/
- .footer-m{ 
-     
-    text-align: center;
-    color: rgb(253, 246, 246);
-   padding: 20px;
 
-} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     /* ISAAC's PART END */
 
-
-
-
+    /* MEEDIA QUERY -- RESPONSIVENESS */
 
 
 @media
@@ -1058,16 +979,4 @@ span {
     }
 
     /* ISAAC */
-} @media (max-width: 767px){
-    .container {
-        grid-area: isaac;
-        position: relative;
-        /* background-color:var(--secondColor); */
-        display: flex;
-        flex-direction: column;
-        padding: 33px;
-        text-align: center;
-         margin: auto; 
-    
-    }
 }
