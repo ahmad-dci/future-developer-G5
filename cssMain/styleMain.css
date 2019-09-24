@@ -39,7 +39,10 @@
     grid-template-areas: 'jay jay jay jay jay jay' 
                          'javier javier javier javier javier javier' 
                          'stefan stefan stefan stefan stefan stefan' 
-                         'isaac isaac isaac isaac isaac isaac';
+                         'isaac isaac isaac isaac isaac isaac'
+                        'footer footer footer footer footer footer'
+                        ;
+                         
 }
 
 /* GRID CONTAINER & AREA END */
@@ -875,7 +878,7 @@ transform: scaleX(1)
 
 /*styling of the card*/
 .card-m{
-    width: 360px;
+    width: 300px;
     height: 360px;
     background:var(--mainColor);
     box-shadow: 0 5px 10px rgba(149, 158, 139, 0.5);
@@ -883,50 +886,56 @@ transform: scaleX(1)
     position:relative;
     border-radius: 50px;
     overflow: hidden;
-}
+   
+   
 
+}
 /*style the whole span*/
 .card-m span{
     height: 100%;
     left: 0;
     position: absolute;
-    /* width: 100%;* initial width of image */
-    transition: 1s;
-    margin: 0px;
-}
-
-/*styling of the images positioning them in their various spans*/
-.container div:nth-child(1) > span{
-    background-image: url(/images/maj2.jpg);
-    background-repeat: no-repeat;
-    background-size: 360px 360px;
-
-}
-
-.container div:nth-child(2)> span{
-    background-image: url(/images/jay2.jpg);
-    background-repeat: no-repeat;
-    background-size: 360px 360px;
+   /* width: 100%;* initial width of image */
+   transition: 1s;
+   margin: 0px;
+   
    
 }
 
-.container div:nth-child(3)> span{
-    background-image: url(/images/stef.jpg) ;
+/*styling of the images positioning them in their various spans*/
+.container div:nth-child(2) > span{
+    background-image: url(/images/maj2.jpg);
     background-repeat: no-repeat;
-    background-size: 360px 360px;
+    background-size: 300px 360px;
+
+}
+
+.container div:nth-child(3)> span{
+    background-image: url(/images/jay2.jpg);
+    background-repeat: no-repeat;
+    background-size: 300px 360px;
+   
 }
 
 .container div:nth-child(4)> span{
+    background-image: url(/images/stef.jpg) ;
+    background-repeat: no-repeat;
+    background-size: 300px 360px;
+
+}
+
+.container div:nth-child(5)> span{
     background-image: url(/images/jav.jpg) ;
     background-repeat: no-repeat;
-    background-size: 360px 360px;
+    background-size: 300px 360px;
 }
+
 
 /*styling of the spans*/
 .card-m  span:nth-child(1){
     z-index: 10;
     width: 25%;
-    transition-delay: 0;
+    transition-delay: 0;  
 }
 .card-m span:nth-child(2){
     z-index: 9;
@@ -939,18 +948,19 @@ transform: scaleX(1)
     z-index: 8;
     width: 75%;
     transition-delay: 0.6s;
+    
+    
 }
 .card-m span:nth-child(4){
     z-index: 7;
     width: 100%;
-    transition-delay: 0.8s;
+    transition-delay: 0.8s;  
 }
   /*style of the card hover and span*/
  .card-m:hover span{
     transform: translateY(-100%);
     transition: 1s;
 }
-
 .card-m:hover span:nth-child(1){
   
     transition-delay: 0.8s;
@@ -983,8 +993,6 @@ transform: scaleX(1)
 .content-m p{
     color: rgb(230, 233, 229);
 }
-
-
 /*style of the content link*/
 .content-m a{
     width: 100px;
@@ -1002,30 +1010,14 @@ transform: scaleX(1)
 .card-m:hover .content-m{
     transform: translateY(0%)
 }
-
-  
- 
-
-
 /*styling  footer*/
-.footer-m{
-    background-color: var(--thirdColor);
+/* .footer-m{ */
+    /* background-color: var(--thirdColor);
     text-align: center;
     color: rgb(253, 246, 246);
    padding: 20px;
 
-}
-
-
-
-
-
-
-
-
-
-
-
+} */
 @media (max-width: 766px){
     .container {
         grid-area: isaac;
@@ -1039,78 +1031,5 @@ transform: scaleX(1)
     
     }
 }
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     /* ISAAC's PART END */
