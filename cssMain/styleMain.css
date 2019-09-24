@@ -96,6 +96,7 @@
 
 
 
+
 /* JAY's PART START */
 .headerJay {
     position: relative;
@@ -103,7 +104,7 @@
      width: 100vw; 
     height: 100vh;
     overflow: hidden;
-    background: linear-gradient(rgba(73, 70, 70, 0.8), rgba(129, 111, 111, 0.5)), url(/images/G-5.jpg) center no-repeat;
+    background: linear-gradient(rgba(73, 70, 70, 0.8), rgba(129, 111, 111, 0.5)), url(/images/J-1.png) center no-repeat;
     background-size: cover
 }
 
@@ -131,7 +132,9 @@ video {
     list-style-type: none;
     transform: translate(100rem);
     margin: 2rem 1rem;
-    animation: slideIn 1s forwards
+    animation: slideIn 1s forwards;
+    text-align: center
+
 }
 
 #navJay>ul>li>a {
@@ -196,6 +199,7 @@ transform: scaleX(1)
 
 .mainG5Jay{
     position: absolute;
+    
     left: 0;
     right: 0;
     transform: translatey(calc(50vh - 50%));
@@ -216,7 +220,8 @@ transform: scaleX(1)
     animation: animate cubic-bezier(0.445, 0.05, 0.55, 0.95);
     animation-duration: 3s;
     letter-spacing: 2px;
-    transition: .5s
+    transition: .5s;
+    
 }
 
 /* it is the subnav under G-05 icon */
@@ -233,12 +238,12 @@ transform: scaleX(1)
 .subNavJay>li {
     margin: 1rem;
     position: absolute;
-    width: 0;
+    /* width: 0; */
     height: 0;
-    /* background-color: var(--thirdColor); */
+   
     text-align: center;
-    border-radius: 50%;
-    overflow: hidden;
+   
+     overflow: hidden; 
     transition: .5s
 }
 
@@ -255,17 +260,15 @@ transform: scaleX(1)
     transform: scale(1.02);
     text-shadow: 10px 10px 10px black;
     border-radius: 50%;
-    /* background-color: rgba(255, 255, 255, .6) */
-}
+     }
 
 /* The positioning of names after hoverin g5 */
 .G-05Jay:hover .subNavJay>:first-child {
     width: 12vw;
-    transform: translate(5vw, -20vh);
+    transform: translate(5vw, -21vh);
     padding: 50px;
     height: 12vh;
-    /* box-shadow: 10px 10px 10px; */
-    /* background-color: rgba(255, 255, 255, .6); */
+   
 }
 
 .G-05Jay:hover .subNavJay>:nth-child(2) {
@@ -273,8 +276,7 @@ transform: scaleX(1)
     transform: translate(-20vw, -20vh);
     padding: 50px;
     height: 12vh;
-    /* box-shadow: 10px 10px 10px;
-    background-color: rgba(255, 255, 255, .6) */
+    
 }
 
 .G-05Jay:hover .subNavJay>:nth-child(3) {
@@ -282,8 +284,7 @@ transform: scaleX(1)
     transform: translate(-20vw, 4vh);
     padding: 50px;
     height: 12vh;
-    /* box-shadow: 10px 10px 10px;
-    background-color: rgba(255, 255, 255, .6) */
+   
 }
 
 .G-05Jay:hover .subNavJay>:last-child {
@@ -291,8 +292,7 @@ transform: scaleX(1)
     transform: translate(5vw, 4vh);
     padding: 50px;
     height: 12vh;
-    /* box-shadow: 10px 10px 10px;
-    background-color: rgba(255, 255, 255, .6) */
+    
 }
 
 /* END OF THE POSITIONING OF NAMES UNDER G-5 */
@@ -310,7 +310,7 @@ transform: scaleX(1)
         opacity: 1;
         transform: translate(0,)  rotateY(0deg) ;;
        
-        filter: blur(0);`
+        filter: blur(0);
         
     }
 
@@ -318,8 +318,45 @@ transform: scaleX(1)
 
 /* END OF NAVBAR ANIMATION */
 
+@media (max-width: 640px) {
+     .G-05Jay>h3 {
+         font-size:1rem;
+        }
 
+        #navJay>ul {
+            display: block;
+            position: absolute;
+            left: 0;
+            right: 0;
+        }
+        #navJay>ul>li>a {
+            text-decoration: none;
+            font-size: .7rem;
+            text-transform: uppercase;
+            color: var(--thirdColor);
+            padding: 0;
+            letter-spacing: 1px;
+        }
+       
+     } 
 
+     @media (max-width: 768px) {
+        #navJay>ul {
+            display: block;
+            position: absolute;
+           left: 0;
+           right: 0;
+            
+            
+        }
+        .subNavJay {
+           
+            transform: translatex(calc(44vw - 50%));
+           
+        }
+        
+        
+     }
 
 
 
@@ -348,7 +385,6 @@ transform: scaleX(1)
 
 
 /* JAY's PART END */
-
 /* JAVIER's PART START */
 .contentJ {
     grid-area: javier;
