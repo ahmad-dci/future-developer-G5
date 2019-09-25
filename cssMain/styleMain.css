@@ -40,6 +40,7 @@
         'javier javier javier javier javier javier'
         'stefan stefan stefan stefan stefan stefan'
         'isaac isaac isaac isaac isaac isaac';
+        overflow-x: hidden;
 }
 
 /* GRID CONTAINER & AREA END */
@@ -320,7 +321,7 @@ video {
 
     }
 
-}
+
 
 /* END OF NAVBAR ANIMATION */
 
@@ -401,6 +402,7 @@ video {
 }
 
 .Javier {
+    width: 100vw;
     grid-area: javier;
     text-align: center;
     font-size: 1rem;
@@ -458,11 +460,11 @@ video {
     box-shadow: 4px 4px 17px var(--mainColor);
 }
 
-/* .textRightJ> 
+.textRightJ> 
  h3 {
     color: var(--thirdColor);
     text-align: justify;
-}  */
+}  
 
 /* STEFAN's PART START */
 .stefan {
@@ -692,134 +694,134 @@ span {
 /* STEFAN's PART END */
 
 /* ISAAC's PART START */
-/*styling of the card*/
-section .Isaac {
-    position: relative;
-    background: radial-gradient(circle, var(--secondColor), var(--thirdColor));
+
+.checkinfos{
     text-align: center;
+    color: #000;
+    font-size: 20px;
+}
+
+/*container style*/
+.container {
+
     grid-area: isaac;
-    display: grid;
-    grid-template-areas:
-        "headlineM"
-        "cardsM"
-        "footerM"
-}
-
-.headlineM {
-    grid-area: headlineM;
-}
-
-.cardsM {
-    grid-area: cardsM;
-    display: flex;
-    flex-direction: row;
-}
-
-.footerM {
-    grid-area: footerM;
-}
-
-.headlineM {
-    display: flex;
-    flex-direction: row;
-}
-
-.card {
-    /* width: 100%; */
-    /* height: 360px; */
-    background: black;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-    margin: 10px;
     position: relative;
+    /* background-color:var(--secondColor); */
+    display: flex;
+    flex-direction: row;
+    padding: 22px;
+    text-align: center;
+    /* background-image: url(/images/bacm.jpg); */
+
+}
+
+
+/*styling of the card*/
+.card-m{
+    width: 300px;
+    height: 360px;
+    background:var(--mainColor);
+    box-shadow: 0 5px 10px rgba(149, 158, 139, 0.5);
+    margin: 10px ;
+    position:relative;
     border-radius: 50px;
     overflow: hidden;
+   
+   
+
 }
-
-
 /*style the whole span*/
-.card span {
+.card-m span{
     height: 100%;
     left: 0;
     position: absolute;
-    /* width: 100%;* initial width of image */
-    transition: 1s;
-    margin: 0px;
+   /* width: 100%;* initial width of image */
+   transition: 1s;
+   margin: 0px;
+   
+   
 }
 
 /*styling of the images positioning them in their various spans*/
-.Isaac .cardIsaac>span {
-    background: url(/images/M-Maj.jpg);
+.container div:nth-child(1) > span{
+    background-image: url(/images/maj.jpg);
     background-repeat: no-repeat;
-    /* background-size: 360px 360px; */
+    background-size: 300px 360px;
+
 }
 
-.container div:nth-child(2)>span {
-    background: url(/images/2m.jpg);
+.container div:nth-child(2)> span{
+    background-image: url(/images/jay2.jpg);
     background-repeat: no-repeat;
-    /* background-size: 360px 360px; */
+    background-size: 300px 360px;
+   
 }
 
-.container div:nth-child(3)>span {
-    background: url(/images/6m.jpg);
+.container div:nth-child(3)> span{
+    background-image: url(/images/stef.jpg) ;
     background-repeat: no-repeat;
-    /* background-size: 360px 360px; */
+    background-size: 300px 360px;
+
 }
 
-.container div:nth-child(5)>span {
-    background-image: url(/images/4m.jpg);
+.container div:nth-child(4)> span{
+    background-image: url(/images/jav.jpg) ;
     background-repeat: no-repeat;
-    /* background-size: 360px 360px; */
+    background-size: 300px 360px;
 }
+
 
 /*styling of the spans*/
-.card span:nth-child(1) {
+.card-m  span:nth-child(1){
     z-index: 10;
-    width: 65%;
-    transition-delay: 0;
+    width: 25%;
+    transition-delay: 0;  
 }
-
-.card span:nth-child(2) {
+.card-m span:nth-child(2){
     z-index: 9;
     width: 50%;
+    transition-delay: 0.3s;
+  
+   
 }
-
-.card span:nth-child(3) {
+.card-m span:nth-child(3){
     z-index: 8;
     width: 75%;
     transition-delay: 0.6s;
+    
+    
 }
-
-.card span:nth-child(4) {
+.card-m span:nth-child(4){
     z-index: 7;
     width: 100%;
-    transition-delay: 0.8s;
+    transition-delay: 0.8s;  
 }
-
-/*style of the card hover and span*/
-.card:hover span {
+  /*style of the card hover and span*/
+ .card-m:hover span{
     transform: translateY(-100%);
     transition: 1s;
 }
-
-.card:hover span:nth-child(1) {
+.card-m:hover span:nth-child(1){
+  
     transition-delay: 0.8s;
 }
 
-.card:hover span:nth-child(2) {
+.card-m:hover span:nth-child(2){
+    
     transition-delay: 0.6s;
 }
 
-.card:hover span:nth-child(3) {
+.card-m:hover span:nth-child(3){
     transition-delay: 0.3s;
 }
 
-.card:hover span:nth-child(4) {
+.card-m:hover span:nth-child(4){
     transition-delay: 0s;
 }
 
 /*style of the main content inside the card*/
-.content {
-    color: #fff;
+.content-m{
+    color: rgb(243, 231, 231);
     text-align: center;
     padding: 80px 20px;
     /* width: 100%; */
@@ -828,327 +830,300 @@ section .Isaac {
     transform: translateY(100%);
     transition: 2s;
 }
-
-.content p {
-    color: #999;
+.content-m p{
+    color: rgb(230, 233, 229);
 }
-
-
 /*style of the content link*/
-.content a {
+.content-m a{
     width: 100px;
     text-decoration: none;
-    border-radius: 40px;
-    border: 1px solid #fff;
+    border-radius: 20px;
+    border: 5px solid rgb(255, 255, 255);
     display: block;
-    margin: auto;
+    margin: 1px auto;
     padding: 10px;
-    color: white;
+    color: rgb(255, 255, 255);
+
 }
 
 /*style hover content inside the card*/
-.card:hover .content {
-    transform: translateY(0%);
+.card-m:hover .content-m{
+    transform: translateY(0%)
 }
-
-/*styling of the contact to show hover*/
-.contact {
-    display: flex;
-    color: rgb(15, 12, 12);
-    align-items: center;
+/*styling  footer*/
+ .footer-m{ 
+     
     text-align: center;
-}
+    color: rgb(253, 246, 246);
+   padding: 20px;
 
-/*styling of the footer*/
-.footer {
-    background-color: var(--thirdColor);
-    text-align: center;
-    color: #fff;
-    /* height: 3vh; */
-    padding: 20px;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+} 
 
     /* ISAAC's PART END */
 
-    /* MEEDIA QUERY -- RESPONSIVENESS */
-}
 
-@media
 
-/*ipad/laptop*/
-(max-width: 1023px) {
 
-    /* General */
-    #returnToTop {
-        display: none;
+
+
+    @media
+
+    /*ipad/laptop*/
+    (max-width: 1023px) {
+    
+        /* General */
+        #returnToTop {
+            display: none;
+        }
+    
+        /* JAY */
+    
+    
+        /* JAVIER */
+    
+        .headlineJ {
+            padding: 2rem;
+            font-size: 3rem;
+        }
+    
+        .headlineJ p {
+            color: var(--secondColor);
+            text-shadow: var(--textShadow);
+        }
+    
+        .mainJ {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            margin-bottom: 2rem;
+        }
+    
+        .imageLeftJ img {
+            margin: 0rem auto;
+            margin-bottom: 2rem;
+            border-radius: 4px;
+            max-width: 80vw;
+            box-shadow: 2px 2px 12px var(--mainColor);
+            transition: all 0.2s ease-in;
+        }
+    
+        .imageLeftJ img:hover {
+            transform: scale(1.02);
+            box-shadow: 4px 4px 17px var(--mainColor);
+        }
+    
+        .textRightJ {
+            display: flex;
+            flex-direction: column;
+            max-width: 90%;
+            background-color: var(--secondColor);
+            border: 2px solid var(--thirdColor);
+            line-height: 1.4;
+            padding: 2rem;
+            box-shadow: 2px 2px 12px var(--mainColor);
+        }
+/*     
+         .textRightJ p,
+        h3 {
+            width: 80vw;
+            justify-content: center;
+            color: var(--thirdColor);
+            text-align: justify;
+        }  */
+    
+    
+        /* STEFAN */
+        .stefan {
+            padding: 0rem;
+        }
+    
+        .containerTextS {
+            text-align: center;
+        }
+    
+        .containerTextS>div,
+        span {
+            font-size: 2.5rem;
+            color: var(--secondColor);
+            margin: .5rem;
+            flex-wrap: nowrap;
+            display: inline-block;
+        }
+    
+        .headlineS {
+            animation: 0;
+        }
+    
+        .sublineS {
+            animation: 0;
+        }
+    
+        .skillsetS {
+            display: flex;
+            flex-flow: row wrap;
+        }
+    
+        .skillsS {
+            background: var(--secondColor);
+            border: 2px solid var(--thirdColor);
+            border-radius: 4px;
+            margin: 0.5rem;
+            padding: 1rem;
+            width: 35vw;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .skillsS p {
+            font-size: 1rem;
+        }
     }
-
-    /* JAY */
-
-
-    /* JAVIER */
-
-    .headlineJ {
-        padding: 2rem;
-        font-size: 3rem;
-    }
-
-    .headlineJ p {
-        color: var(--secondColor);
-        text-shadow: var(--textShadow);
-    }
-
-    .mainJ {
+    
+     /* ISAAC  */
+      .container {
+        grid-area: isaac;
+        position: relative;
+         background-color:var(--secondColor); 
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        margin-bottom: 2rem;
-    }
-
-    .imageLeftJ img {
-        margin: 0rem auto;
-        margin-bottom: 2rem;
-        border-radius: 4px;
-        max-width: 80vw;
-        box-shadow: 2px 2px 12px var(--mainColor);
-        transition: all 0.2s ease-in;
-    }
-
-    .imageLeftJ img:hover {
-        transform: scale(1.02);
-        box-shadow: 4px 4px 17px var(--mainColor);
-    }
-
-    .textRightJ {
-        display: flex;
-        flex-direction: column;
-        max-width: 90%;
-        background-color: var(--secondColor);
-        border: 2px solid var(--thirdColor);
-        line-height: 1.4;
-        padding: 2rem;
-        box-shadow: 2px 2px 12px var(--mainColor);
-    }
-
-    /* .textRightJ p,
-    h3 {
-        width: 80vw;
-        justify-content: center;
-        color: var(--thirdColor);
-        text-align: justify;
-    } */
-
-
-    /* STEFAN */
-    .stefan {
-        padding: 0rem;
-    }
-
-    .containerTextS {
+        padding: 33px;
         text-align: center;
+         margin: auto; 
+    
+    }  
+    
+    
+    
+    @media
+    
+    /*Smartphones*/
+    (max-width: 767px) {
+    
+        /* General */
+        #returnToTop {
+            display: none;
+        }
+    
+        /* JAY */
+    
+    
+        /* JAVIER */
+        .headlineJ {
+            padding: 0.5rem;
+            font-size: 2rem;
+        }
+    
+        .headlineJ p {
+            color: var(--secondColor);
+            text-shadow: var(--textShadow);
+        }
+    
+        .mainJ {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            margin-bottom: 1rem;
+        }
+    
+        .imageLeftJ img {
+            margin: 1rem auto;
+            margin-bottom: 1rem;
+            border-radius: 4px;
+            max-width: 80vw;
+            box-shadow: 2px 2px 12px var(--mainColor);
+        }
+    
+        .imageLeftJ img:hover {
+            transform: scale(1.02);
+            box-shadow: 4px 4px 17px var(--mainColor);
+        }
+    
+        .textRightJ {
+            display: flex;
+            flex-direction: column;
+            max-width: 85vw;
+            min-width: 0;
+            background-color: var(--secondColor);
+            border: 2px solid var(--thirdColor);
+            line-height: 1.4;
+            padding: 1.5rem;
+            box-shadow: 2px 2px 12px var(--mainColor);
+        }
+/*     
+        .textRightJ p,
+        h3 {
+            width: 70vw;
+            justify-content: center;
+            color: var(--thirdColor);
+            text-align: justify;
+        }  */
+    
+        /* STEFAN */
+        .stefan {
+            padding: 0.2rem;
+        }
+    
+        .containerTextS {
+            width: 90vw;
+            text-align: center;
+        }
+    
+        .containerTextS>div {
+            font-size: 2rem;
+            color: var(--secondColor);
+            margin: 0.2rem 0;
+            flex-wrap: nowrap;
+            display: inline-block;
+        }
+    
+        .headlineS {
+            animation: 0;
+        }
+    
+        .sublineS {
+            animation: 0;
+        }
+    
+        .containerTextS span {
+            display: none;
+        }
+    
+        .skillsetS {
+            display: flex;
+            flex-flow: column wrap;
+            margin: 0 auto;
+            /* justify-content: center; */
+        }
+    
+        .skillsS {
+            background: var(--secondColor);
+            border: 2px solid var(--thirdColor);
+            border-radius: 4px;
+            margin: 0.5rem;
+            padding: 0.5rem;
+            width: 75vw;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .skillsS p {
+            display: none;
+        }
+    
+        /* ISAAC */
+    } @media (max-width: 767px){
+        .container {
+            grid-area: isaac;
+            position: relative;
+            /* background-color:var(--secondColor); */
+            display: flex;
+            flex-direction: column;
+            padding: 33px;
+            text-align: center;
+             margin: auto; 
+        
+        }
     }
-
-    .containerTextS>div,
-    span {
-        font-size: 2.5rem;
-        color: var(--secondColor);
-        margin: .5rem;
-        flex-wrap: nowrap;
-        display: inline-block;
-    }
-
-    .headlineS {
-        animation: 0;
-    }
-
-    .sublineS {
-        animation: 0;
-    }
-
-    .skillsetS {
-        display: flex;
-        flex-flow: row wrap;
-    }
-
-    .skillsS {
-        background: var(--secondColor);
-        border: 2px solid var(--thirdColor);
-        border-radius: 4px;
-        margin: 0.5rem;
-        padding: 1rem;
-        width: 35vw;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .skillsS p {
-        font-size: 1rem;
-    }
-}
-
-/* ISAAC */
-
-@media
-
-/*Smartphones*/
-(max-width: 767px) {
-
-    /* General */
-    #returnToTop {
-        display: none;
-    }
-
-    /* JAY */
-
-
-    /* JAVIER */
-    .headlineJ {
-        padding: 0.5rem;
-        font-size: 2rem;
-    }
-
-    .headlineJ p {
-        color: var(--secondColor);
-        text-shadow: var(--textShadow);
-    }
-
-    .mainJ {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        margin-bottom: 1rem;
-    }
-
-    .imageLeftJ img {
-        margin: 1rem auto;
-        margin-bottom: 1rem;
-        border-radius: 4px;
-        max-width: 80vw;
-        box-shadow: 2px 2px 12px var(--mainColor);
-    }
-
-    .imageLeftJ img:hover {
-        transform: scale(1.02);
-        box-shadow: 4px 4px 17px var(--mainColor);
-    }
-
-    .textRightJ {
-        display: flex;
-        flex-direction: column;
-        max-width: 85vw;
-        min-width: 0;
-        background-color: var(--secondColor);
-        border: 2px solid var(--thirdColor);
-        line-height: 1.4;
-        padding: 1.5rem;
-        box-shadow: 2px 2px 12px var(--mainColor);
-    }
-
-    /* .textRightJ p,
-    h3 {
-        width: 70vw;
-        justify-content: center;
-        color: var(--thirdColor);
-        text-align: justify;
-    } */
-
-    /* STEFAN */
-    .stefan {
-        padding: 0.2rem;
-    }
-
-    .containerTextS {
-        width: 90vw;
-        text-align: center;
-    }
-
-    .containerTextS>div {
-        font-size: 2rem;
-        color: var(--secondColor);
-        margin: 0.2rem 0;
-        flex-wrap: nowrap;
-        display: inline-block;
-    }
-
-    .headlineS {
-        animation: 0;
-    }
-
-    .sublineS {
-        animation: 0;
-    }
-
-    .containerTextS span {
-        display: none;
-    }
-
-    .skillsetS {
-        display: flex;
-        flex-flow: column wrap;
-        margin: 0 auto;
-        /* justify-content: center; */
-    }
-
-    .skillsS {
-        background: var(--secondColor);
-        border: 2px solid var(--thirdColor);
-        border-radius: 4px;
-        margin: 0.5rem;
-        padding: 0.5rem;
-        width: 75vw;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .skillsS p {
-        display: none;
-    }
-
-    /* ISAAC */
-}
+    
