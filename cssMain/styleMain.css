@@ -108,8 +108,9 @@ video {
     height: 100%;
 }
 
-
+/* //////////////////////////////////////////////////// */
 /* start of the navbar with all the animation and etc */
+/* ////////////////////////////////////////////////////// */
 
 #navJay {
     position: relative;
@@ -186,12 +187,14 @@ video {
     transform: scaleX(1)
 }
 
+/* //////////////////////////////////////////////////// */
+/* END of the navbar with all the animation and etc */
+/* ////////////////////////////////////////////////////// */
 
-/*END OF THE NAVBAR   */
-
+/* ////////////////////////////////////////////////////// */
 
 /*start of the legendary g 5 AND THE CHILDREN */
-
+/* ////////////////////////////////////////////////////// */
 .mainG5Jay {
     position: absolute;
     left: 0;
@@ -216,7 +219,7 @@ video {
     letter-spacing: 2px;
     transition: .5s;
 }
-
+/* ////////////////////////////////// */
 
 /* it is the subnav under G-05 icon */
 
@@ -233,7 +236,7 @@ video {
 .subNavJay>li {
     margin: 1rem;
     position: absolute;
-    /* width: 0; */
+    
     height: 0;
     text-align: center;
     overflow: hidden;
@@ -253,9 +256,12 @@ video {
     transform: scale(1.02);
     text-shadow: 10px 10px 10px black;
     border-radius: 50%;
-}
+     }
+     /* ////////////////////////////////// */
+/* END OF the subnav under G-05 icon */
 
 
+/* ///////////////////////////////////////// */
 /* The positioning of names after hoverin g5 */
 
 .G-05Jay:hover .subNavJay>:first-child {
@@ -288,7 +294,7 @@ video {
 
 
 /* END OF THE POSITIONING OF NAMES UNDER G-5 */
-
+/* /////////////////////////// */
 
 /* START OF NAVBAR ANIMATION */
 
@@ -306,7 +312,7 @@ video {
     }
 }
 
-
+/* /////////////////////// */
 /* END OF NAVBAR ANIMATION */
 
 
