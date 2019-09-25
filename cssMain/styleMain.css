@@ -277,7 +277,7 @@ video {
 /* The positioning of names after hoverin g5 */
 .G-05Jay:hover .subNavJay>:first-child{
     width: 12vw;
-    transform: translate(5vw, -20vh);
+    transform: translate(40%, -114%);
     padding: 50px;
     height: 12vh;
    
@@ -285,7 +285,7 @@ video {
 
 .G-05Jay:hover .subNavJay>:nth-child(2) {
     width: 12vw;
-    transform: translate(-20vw, -20vh);
+    transform: translate(-166%, -114%);
     padding: 50px;
     height: 12vh;
     
@@ -293,7 +293,7 @@ video {
 
 .G-05Jay:hover .subNavJay>:nth-child(3) {
     width: 12vw;
-    transform: translate(-20vw, 4vh);
+    transform: translate(-161%, 24%);
     padding: 50px;
     height: 12vh;
    
@@ -301,7 +301,7 @@ video {
 
 .G-05Jay:hover .subNavJay>:last-child {
     width: 12vw;
-    transform: translate(5vw, 4vh);
+    transform: translate(47%, 24%);
     padding: 50px;
     height: 12vh;
     
@@ -862,7 +862,40 @@ max-width: 70vw;
 
 /* /////////////////////////////////////////////////// */
 /* /////////////////////////////////////////////////// */
+@media(Min-width:1025px){
+    .G-05Jay:hover .subNavJay>:first-child{
+        width: 12vw;
+        transform: translate(40%, -175%);
+        padding: 50px;
+        height: 12vh;
+       
+    }
+    
+    .G-05Jay:hover .subNavJay>:nth-child(2) {
+        width: 12vw;
+        transform: translate(-166%, -175%);
+        padding: 50px;
+        height: 12vh;
+        
+    }
+    
+    .G-05Jay:hover .subNavJay>:nth-child(3) {
+        width: 12vw;
+        transform: translate(-161%, 24%);
+        padding: 50px;
+        height: 12vh;
+       
+    }
+    
+    .G-05Jay:hover .subNavJay>:last-child {
+        width: 12vw;
+        transform: translate(47%, 24%);
+        padding: 50px;
+        height: 12vh;
+        
+    }
 
+}
 /*ipad/laptop*/
 @media (max-width: 1023px) {
 
@@ -874,7 +907,38 @@ max-width: 70vw;
 
     /* /////////////////////////////////////////////////// */
     /* JAY */
+    .G-05Jay:hover .subNavJay>:first-child{
+        width: 12vw;
+        transform: translate(44%, -175%);
+        padding: 50px;
+        height: 12vh;
+       
+    }
+    
+    .G-05Jay:hover .subNavJay>:nth-child(2) {
+        width: 12vw;
+        transform: translate(-221%, -170%);
 
+        padding: 50px;
+        height: 12vh;
+        
+    }
+    
+    .G-05Jay:hover .subNavJay>:nth-child(3) {
+        width: 12vw;
+        transform: translate(-217%, 25%);
+        padding: 50px;
+        height: 12vh;
+       
+    }
+    
+    .G-05Jay:hover .subNavJay>:last-child {
+        width: 12vw;
+        transform: translate(53%, 28%);
+        padding: 50px;
+        height: 12vh;
+        
+    }
 
     /* ///////////////////////////////////////////////////7 */
     /* JAVIER */
@@ -1003,7 +1067,7 @@ max-width: 70vw;
 /* /////////////////////////////////////////////////// */
 
 /*Smartphones*/
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 
     /* /////////////////////////////////////////////////// */
     /* General */
@@ -1023,15 +1087,32 @@ max-width: 70vw;
         
     }
     .G-05Jay:hover .subNavJay>:first-child {
-     
-     transform: translate(12vw, -20vh);
-     
- }
- .G-05Jay:hover .subNavJay>:last-child {
-   
-     transform: translate(13vw, 4vh);
+        
+        transform: translate(101%, -139%);
+        
+       
+    }
     
- }
+    .G-05Jay:hover .subNavJay>:nth-child(2) {
+        
+        transform: translate(-199%, -139%);
+        
+        
+    }
+    
+    .G-05Jay:hover .subNavJay>:nth-child(3) {
+        
+        transform: translate(-196%, 8%);
+        
+       
+    }
+    
+    .G-05Jay:hover .subNavJay>:last-child {
+        
+        transform: translate(116%, 8%);
+       
+    }
+      
 
     .subNavJay {
        
@@ -1199,28 +1280,28 @@ max-width: 70vw;
 
        .G-05Jay:hover .subNavJay>:first-child {
         
-        transform: translate(3vw, -15vh);
+        transform: translate(7%, -121%);
         
        
     }
     
     .G-05Jay:hover .subNavJay>:nth-child(2) {
         
-        transform: translate(-20vw, -15vh);
+        transform: translate(-131%, -121%);
         
         
     }
     
     .G-05Jay:hover .subNavJay>:nth-child(3) {
         
-        transform: translate(-20vw, -1vh);
+        transform: translate(-131%, -31%);
         
        
     }
     
     .G-05Jay:hover .subNavJay>:last-child {
         
-        transform: translate(5vw, -1vh);
+        transform: translate(7%, -31%);
        
     }
       
