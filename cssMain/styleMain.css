@@ -685,7 +685,7 @@ span {
     color: var(--secondColor);
     text-shadow: var(--textShadow);
     font-size: 3rem;
-    margin-top: 2rem;
+    padding: 1rem 1rem 0rem 1rem;
 }
 
 /*container style*/
@@ -704,14 +704,14 @@ span {
 
 /*styling of the card*/
 .card-m {
-    width: 25%;
-    min-width: 300px;
+    width: 20%;
+     max-width: 60vw; 
     height: 360px;
     background: var(--mainColor);
     box-shadow: 0 5px 10px rgba(149, 158, 139, 0.5);
     margin: 10px;
     position: relative;
-    border-radius: 50px;
+    border-radius: 30px;
     overflow: hidden;
 
 
@@ -726,6 +726,7 @@ span {
     /* width: 100%;* initial width of image */
     transition: 1s;
     margin: 0px;
+    
 
 
 }
@@ -1058,7 +1059,7 @@ span {
     }
 
     .containerTextS>div {
-        font-size: 2rem;
+        /* font-size: 2rem; */
         color: var(--secondColor);
         margin: 0.2rem 0;
         flex-wrap: nowrap;
