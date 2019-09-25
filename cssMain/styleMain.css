@@ -73,9 +73,10 @@
 
 /* BACKGROUND-COLOR */
 .background3of4 {
-    background: radial-gradient(circle, var(--secondColor), var(--thirdColor));
+    background: radial-gradient(circle,var(--secondColor), var(--thirdColor), var(--mainColor));
     width: 100vw;
 }
+
 
 
 
@@ -109,8 +110,11 @@
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    background: linear-gradient(rgba(73, 70, 70, 0.8), rgba(129, 111, 111, 0.5)), url(/images/G-5.jpg) center no-repeat;
-    background-size: cover
+    background: linear-gradient(rgba(73, 70, 70, 0.8), rgba(129, 111, 111, 0.5)), url(/images/new1.jpg) center no-repeat;
+    background-size: cover;
+    box-shadow: 0px 17px 20px rgb(63, 51, 51);    
+    filter: grayscale(0.3);
+    
 }
 
 video {
@@ -137,7 +141,9 @@ video {
     list-style-type: none;
     transform: translate(100rem);
     margin: 2rem 1rem;
-    animation: slideIn 1s forwards
+    animation: slideIn 1s forwards;
+    text-align: center
+
 }
 
 #navJay>ul>li>a {
@@ -205,6 +211,7 @@ video {
 
 .mainG5Jay {
     position: absolute;
+    
     left: 0;
     right: 0;
     transform: translatey(calc(50vh - 50%));
@@ -225,7 +232,8 @@ video {
     animation: animate cubic-bezier(0.445, 0.05, 0.55, 0.95);
     animation-duration: 3s;
     letter-spacing: 2px;
-    transition: .5s
+    transition: .5s;
+    
 }
 
 /* it is the subnav under G-05 icon */
@@ -242,12 +250,12 @@ video {
 .subNavJay>li {
     margin: 1rem;
     position: absolute;
-    width: 0;
+    /* width: 0; */
     height: 0;
-    /* background-color: var(--thirdColor); */
+   
     text-align: center;
-    border-radius: 50%;
-    overflow: hidden;
+   
+     overflow: hidden; 
     transition: .5s
 }
 
@@ -264,17 +272,15 @@ video {
     transform: scale(1.02);
     text-shadow: 10px 10px 10px black;
     border-radius: 50%;
-    /* background-color: rgba(255, 255, 255, .6) */
-}
+     }
 
 /* The positioning of names after hoverin g5 */
-.G-05Jay:hover .subNavJay>:first-child {
+.G-05Jay:hover .subNavJay>:first-child{
     width: 12vw;
     transform: translate(5vw, -20vh);
     padding: 50px;
     height: 12vh;
-    /* box-shadow: 10px 10px 10px; */
-    /* background-color: rgba(255, 255, 255, .6); */
+   
 }
 
 .G-05Jay:hover .subNavJay>:nth-child(2) {
@@ -282,8 +288,7 @@ video {
     transform: translate(-20vw, -20vh);
     padding: 50px;
     height: 12vh;
-    /* box-shadow: 10px 10px 10px;
-    background-color: rgba(255, 255, 255, .6) */
+    
 }
 
 .G-05Jay:hover .subNavJay>:nth-child(3) {
@@ -291,8 +296,7 @@ video {
     transform: translate(-20vw, 4vh);
     padding: 50px;
     height: 12vh;
-    /* box-shadow: 10px 10px 10px;
-    background-color: rgba(255, 255, 255, .6) */
+   
 }
 
 .G-05Jay:hover .subNavJay>:last-child {
@@ -300,8 +304,7 @@ video {
     transform: translate(5vw, 4vh);
     padding: 50px;
     height: 12vh;
-    /* box-shadow: 10px 10px 10px;
-    background-color: rgba(255, 255, 255, .6) */
+    
 }
 
 /* END OF THE POSITIONING OF NAMES UNDER G-5 */
@@ -317,20 +320,21 @@ video {
 
     100% {
         opacity: 1;
-        transform: translate(0, ) rotateY(0deg);
-        ;
-
+        transform: translate(0,)  rotateY(0deg) ;;
+       
         filter: blur(0);
+        
+    }
 
     }
 
-}
+
 
 /* END OF NAVBAR ANIMATION */
 
 
 
-
+   
 
 
 
@@ -362,6 +366,7 @@ video {
 /* Javier's PART START */
 
 .Javier {
+    width: 100vw;
     grid-area: javier;
     text-align: center;
     font-size: 1rem;
@@ -373,7 +378,7 @@ video {
     font-size: 3rem;
 }
 
-.headlineJ p {
+.headlineJ >p {
     color: var(--secondColor);
     text-shadow: var(--textShadow);
     animation: showupJ 7s infinite;
@@ -424,7 +429,7 @@ video {
 
 
 
-.imageLeftJ img {
+.imageLeftJ> img {
     margin: 0 auto;
     border-radius: 4px;
     position: absolute;
@@ -438,15 +443,15 @@ video {
     transition: all 0.5s ease-in;
 }
 
-.imageLeftJ img:hover {
+.imageLeftJ> img:hover {
     filter: grayscale(0%);
     transform: scale(1.02);
     box-shadow: 4px 4px 17px var(--mainColor);
 }
 
 
-.textRightJ p,
-h3 {
+.textRightJ> h3,
+ .textRightJ> P{
     color: var(--thirdColor);
     text-align: justify;
     line-height: 1.8;
@@ -568,23 +573,23 @@ span {
     font-size: 5rem;
 }
 
-.skillsS h4 {
+.skillsS >h4 {
     font-weight: 600;
     font-size: 1.3rem;
     margin: 0.7rem;
 }
 
-.skillsS p {
+.skillsS> p {
     font-size: 0.9rem;
     margin: 1rem 0;
     line-height: 1.5;
 }
 
-.skillsS a {
+.skillsS> a {
     text-decoration: none;
 }
 
-.skillsS a:nth-last-of-type(1) {
+.skillsS> a:nth-last-of-type(1) {
     margin: 1rem 0;
     font-weight: 600;
     text-transform: uppercase;
@@ -685,27 +690,27 @@ span {
     color: var(--secondColor);
     text-shadow: var(--textShadow);
     font-size: 3rem;
-    padding: 1rem 1rem 0rem 1rem;
+    padding: 1rem 1rem 0 1rem;
+    animation: showupJ 7s infinite;
 }
 
 /*container style*/
 .container {
+max-width: 70vw;
     grid-area: isaac;
     position: relative;
-    /* background-color:var(--secondColor); */
     display: flex;
     flex-direction: row wrap;
     padding: 22px;
     text-align: center;
-    /* background-image: url(/images/bacm.jpg); */
-
+    
 }
 
 
 /*styling of the card*/
 .card-m {
     width: 20%;
-     max-width: 60vw; 
+    min-width: 300px;
     height: 360px;
     background: var(--mainColor);
     box-shadow: 0 5px 10px rgba(149, 158, 139, 0.5);
@@ -723,7 +728,6 @@ span {
     height: 100%;
     left: 0;
     position: absolute;
-    /* width: 100%;* initial width of image */
     transition: 1s;
     margin: 0px;
     
@@ -815,19 +819,17 @@ span {
     color: rgb(243, 231, 231);
     text-align: center;
     padding: 80px 20px;
-    /* width: 100%; */
-    /* height: 100%; */
     box-sizing: border-box;
     transform: translateY(100%);
     transition: 2s;
 }
 
-.content-m p {
+.content-m> p {
     color: var(--thirdColor);
 }
 
 /*style of the content link*/
-.content-m a {
+.content-m> a {
     width: 100px;
     text-decoration: none;
     border-radius: 20px;
@@ -876,7 +878,12 @@ span {
 
     /* ///////////////////////////////////////////////////7 */
     /* JAVIER */
-    .headlineJ p {
+    .headlineJ {
+       
+        font-size: 2.5rem;
+    }
+
+    .headlineJ> p {
         animation: 0;
     }
 
@@ -905,7 +912,7 @@ span {
         position: relative;
     }
 
-    .imageLeftJ img {
+    .imageLeftJ >img {
         margin: 0 auto 1rem auto;
         border-radius: 4px;
         position: relative;
@@ -915,7 +922,7 @@ span {
         transition: none;
     }
 
-    .imageLeftJ img:hover {
+    .imageLeftJ> img:hover {
         filter: grayscale(0%);
         transform: scale(1);
         box-shadow: 1px 1px 10px var(--thirdColor);
@@ -965,22 +972,30 @@ span {
         flex-direction: column;
     }
 
-    .skillsS p {
+    .skillsS >p {
         font-size: 1rem;
     }
 }
 
 /* /////////////////////////////////////////////////// */
 /* ISAAC */
+.checkinfos {
+    
+    font-size: 2.5rem;
+    animation: 0;
+}
+
 .container {
     grid-area: isaac;
     position: relative;
     /* background-color:var(--secondColor); */
     display: flex;
-    flex-direction: row wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
     padding: 2rem;
     text-align: center;
     margin: auto;
+    justify-content: center
 
 }
 
@@ -999,8 +1014,44 @@ span {
     /* /////////////////////////////////////////////////// */
     /* JAY */
 
+    #navJay>ul {
+        display: block;
+        position: absolute;
+       left: 0;
+       right: 0;
+        
+        
+    }
+    .G-05Jay:hover .subNavJay>:first-child {
+     
+     transform: translate(12vw, -20vh);
+     
+ }
+ .G-05Jay:hover .subNavJay>:last-child {
+   
+     transform: translate(13vw, 4vh);
+    
+ }
+
+    .subNavJay {
+       
+        transform: translatex(calc(44vw - 50%));
+       
+    }
+    
+    
+ 
+
+
+
+
     /* /////////////////////////////////////////////////// */
     /* JAVIER */
+    .headlineJ {
+       
+        font-size: 2rem;
+    }
+
     .headlineJ p {
         animation: 0;
     }
@@ -1030,7 +1081,7 @@ span {
         position: relative;
     }
 
-    .imageLeftJ img {
+    .imageLeftJ> img {
         margin: 0 auto 1rem auto;
         border-radius: 4px;
         position: relative;
@@ -1040,7 +1091,7 @@ span {
         transition: all;
     }
 
-    .imageLeftJ img:hover {
+    .imageLeftJ> img:hover {
         filter: grayscale(0%);
         transform: scale(1);
         box-shadow: 0px 0px 0px var(--secondColor);
@@ -1102,19 +1153,83 @@ span {
     } */
 
     /* /////////////////////////////////////////////////// */
-    /* ISAAC */
+     /* ISAAC */
+    .checkinfos
+     {
+    
+    font-size: 2.5rem;
+    animation: 0;
+} 
+
+
     .container {
         grid-area: isaac;
         position: relative;
-        /* background-color:var(--secondColor); */
+         justify-content: center;
         display: flex;
-        flex-direction: column;
         padding: 33px;
-        text-align: center;
         margin: auto;
 
     }
 }
+
+/* ////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+ */
+@media (max-width: 640px) {
+    /* JAY */
+    .G-05Jay>h3 {
+        font-size:1rem;
+       }
+
+       /* #navJay>ul {
+           display: block;
+           position: absolute;
+           left: 0;
+           right: 0;
+       } */
+       #navJay>ul>li>a {
+           text-decoration: none;
+           font-size: .7rem;
+           text-transform: uppercase;
+           color: var(--thirdColor);
+           padding: 0;
+           letter-spacing: 1px;
+       }
+
+       .G-05Jay:hover .subNavJay>:first-child {
+        
+        transform: translate(3vw, -15vh);
+        
+       
+    }
+    
+    .G-05Jay:hover .subNavJay>:nth-child(2) {
+        
+        transform: translate(-20vw, -15vh);
+        
+        
+    }
+    
+    .G-05Jay:hover .subNavJay>:nth-child(3) {
+        
+        transform: translate(-20vw, -1vh);
+        
+       
+    }
+    
+    .G-05Jay:hover .subNavJay>:last-child {
+        
+        transform: translate(5vw, -1vh);
+       
+    }
+      
+    } 
+
+    /* //////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////////// */
+
+
 
 @media (max-width: 500px){
 
@@ -1141,7 +1256,20 @@ span {
 }
 
 @media (max-width: 300px) {
-.skillsS p {
+.skillsS> p {
  display: none;
 }
 }
+
+
+
+
+
+   
+
+
+
+
+
+
+
