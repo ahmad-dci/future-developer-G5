@@ -699,13 +699,11 @@ span {
 max-width: 70vw;
     grid-area: isaac;
     position: relative;
-    /* background-color:var(--secondColor); */
     display: flex;
     flex-direction: row wrap;
     padding: 22px;
     text-align: center;
-    /* background-image: url(/images/bacm.jpg); */
-
+    
 }
 
 
@@ -718,7 +716,7 @@ max-width: 70vw;
     box-shadow: 0 5px 10px rgba(149, 158, 139, 0.5);
     margin: 10px;
     position: relative;
-    border-radius: 50px;
+    border-radius: 30px;
     overflow: hidden;
 
 
@@ -730,9 +728,9 @@ max-width: 70vw;
     height: 100%;
     left: 0;
     position: absolute;
-    /* width: 100%;* initial width of image */
     transition: 1s;
     margin: 0px;
+    
 
 
 }
@@ -821,8 +819,6 @@ max-width: 70vw;
     color: rgb(243, 231, 231);
     text-align: center;
     padding: 80px 20px;
-    /* width: 100%; */
-    /* height: 100%; */
     box-sizing: border-box;
     transform: translateY(100%);
     transition: 2s;
@@ -1114,7 +1110,7 @@ max-width: 70vw;
     }
 
     .containerTextS>div {
-        font-size: 2rem;
+        /* font-size: 2rem; */
         color: var(--secondColor);
         margin: 0.2rem 0;
         flex-wrap: nowrap;
@@ -1171,9 +1167,7 @@ max-width: 70vw;
         position: relative;
          justify-content: center;
         display: flex;
-        /* flex-direction: column; */
         padding: 33px;
-        
         margin: auto;
 
     }
